@@ -1,0 +1,241 @@
+body, p, form, h1, h2, h3, h4, h5, h6, ul, li, section, div{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.head{
+	height:120px;
+	background-color: #0D1730;
+}
+.topbar {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    text-align: center;
+    height: 120px;
+    position: relative;
+}
+.icon{
+	display: flex;
+	flex-direction: row;
+	width: 290px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-right: 300px;
+}
+.icondiv{
+	color:#FFFFFF;
+	font-size: 12px;
+	width:25%;
+	text-align: center;
+}
+.icondiv span{
+	padding-top: 9px;
+}
+.logo{
+	width: 209px;
+    height: 160px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 24px;
+    z-index: 2100;
+    background: #DDBBA2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+	position: relative;
+	width: 100%;
+    background: #213057;
+    height: 40px;
+}
+.nav .topbar2{
+	width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    text-align: center;
+    height: 40px;
+    position: relative;
+}
+.nav .center{
+	position: absolute;
+	left:233px;
+	width:480px;
+	height: 40px;
+}
+.nav .son {
+    margin: 0 auto;
+    width: 830px;
+    position: relative;
+    z-index: 1000;
+}
+.nav ul li {
+    float: left;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+    box-sizing: border-box;
+    border-right: 1px solid #364366;
+}
+.nav .son_li {
+    background: url(../img/arrow1.png) no-repeat;
+    background-position: 94px 18px;
+    position:relative;
+    color: #fefefe;
+	font-size: 14px;
+}
+.nav .son a{
+	text-decoration: none;
+	color: #fefefe;
+	font-size: 14px;
+}
+.nav .son>li:hover {
+    background: #454545;
+}
+.nav .son>li:hover>a{
+	color: #ea5514;
+}
+.son .son_li ul {
+    position: absolute;
+    z-index: 3000;
+    display: none;
+    left: 0px;
+    top: 36px;
+}
+.son .son_li ul li {
+    float: none;
+    position: relative;
+    z-index: 100;
+    background: #454545;
+    height: 30px;
+    line-height: 30px;
+}
+.nav .son_li:hover .click {
+	display:block;
+    color: #fa4905;
+    border-top: 4px solid #fa4905;
+    line-height: 32px;
+}
+.nav .son_li:hover ul{
+	display: block;
+}
+.son_li ul li:hover {
+	background-color: #363636;
+}
+.son_li ul li:hover a{
+	color:#FA4905;
+}
+.right_sevice {
+    position: fixed;
+    z-index: 100;
+    top: 25%;
+    right: 0%;
+    background: #7E8FA2;
+    padding: 5px 10px 10px;
+}
+
+.right_sevice a {
+    display: block;
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    border-bottom: 1px dashed #FFFFFF;
+    line-height: 50px;
+    margin-bottom: 5px;
+	text-decoration: none;
+}
+.right_sevice a:hover {
+    color: #E2AE19;
+}
+.wx{
+	display: none;
+}
+.app{
+	display: none;
+}
+.r3:hover .wx{
+	display: inline;
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	top: 50px;
+	left: -140px;
+}
+.r4:hover .app{
+	display: inline;
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	top: 102px;
+	left: -140px;
+	
+}
+.chanpin{
+	overflow: hidden;
+width: 1025px;
+margin: auto;
+}
+.chanpin>ul {
+	list-style: none;
+	vertical-align: top;
+	margin-top: 82px;
+}
+.chanpin li{
+display: inline-block;
+overflow: hidden;
+width: 244px;
+margin-bottom: 10px;
+margin-right: 8px;
+}
+.chanpin li img{
+	width: 244px;
+height: 244px;
+float: left;
+margin-bottom: 4px;
+}
+.chanpin li span{
+	font-size: 10px;
+height: 18px;
+line-height: 18px;
+box-sizing: border-box;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+.coup{
+	width: 20%;
+font-size: 8px;
+border: 1px solid #e60039;
+border-radius: 2px;
+color: #e60039;
+padding: 0px 4px;
+height: 16px;
+line-height: 14px;
+text-align: center;
+float: right;
+}
+.tese{
+	color: #005bac;
+font-size: 10px;
+}
+.jiage{
+	font-weight: bold;
+font-size: 14px;
+color: #262626;
+float: left;
+margin-right: 5px;
+height: 25.6px;
+}
+.foot{
+	width: 1903px;
+	background: #0D1730;
+}
+.foot_log{
+	text-align: center;
+}
