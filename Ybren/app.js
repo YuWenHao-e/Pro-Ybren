@@ -9,7 +9,11 @@ var usersRouter = require('./routes/users');
 var homeRouter = require('./routes/home');
 var nsxzRouter = require('./routes/nsxz');
 var baoyangRouter = require('./routes/baoyang');
+
 var dakaxiuRouter = require('./routes/dakaxiu');
+
+var xijiezsRouter = require('./routes/xijiezs');
+
 
 var app = express();
 
@@ -28,7 +32,11 @@ app.use('/users', usersRouter);
 app.use('/home',homeRouter);
 app.use('/nsxz',nsxzRouter);
 app.use('/baoyang',baoyangRouter);
+
 app.use('/dakaxiu',dakaxiuRouter);
+
+app.use('/xijiezs',xijiezsRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
