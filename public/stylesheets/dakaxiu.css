@@ -82,11 +82,11 @@ body{
 .nav .son_li ul li a{color: #f1f2f0;}
 .nav .son_li ul li:hover{}
 .nav .son_li ul li:hover a{color: #fa4905;background:#363636;}
-.right_sevice{position: fixed;z-index: 100;top:25%;right: 0%;background: #7E8FA2;padding: 5px 10px 10px;}
+.right_sevice{position: fixed;z-index: 100;top:25%;right: 0%;background: #161235;padding: 5px 10px 10px;}
 .right_sevice a{display: block;width:90px;height:50px;text-align: center;color: #FFFFFF;border-bottom: 1px dashed #FFFFFF;line-height: 50px;margin-bottom:5px;}
 .right_sevice a:hover{color: #E2AE19;}
 .right_sevice .r1{}
-.right_sevice .r2{overflow: hidden;border-bottom: none;height:90px;width: 90px;background: url(../web/index/yy.png) no-repeat center center;background-size:100% ;}
+.right_sevice .r2{overflow: hidden;border-bottom: none;height:90px;width: 90px;background: url(../images/yy.png) no-repeat center center;background-size:100% ;}
 .right_sevice .r2 img{float: left;width: 100%;}
 .right_sevice .r3{}
 .right_sevice .r4{border-bottom: none}

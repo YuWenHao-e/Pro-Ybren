@@ -130,14 +130,16 @@ body, p, form, h1, h2, h3, h4, h5, h6, ul, li, section, div{
 .son_li ul li:hover a{
     color:#FA4905;
 }
-
+.container img{
+    width:100%;
+}
 
 .right_sevice {
     position: fixed;
     z-index: 100;
     top: 25%;
     right: 0%;
-    background: #7E8FA2;
+    background: #161235;
     padding: 5px 10px 10px;
 }
 .right_sevice a {
@@ -178,11 +180,12 @@ body, p, form, h1, h2, h3, h4, h5, h6, ul, li, section, div{
 
 }
 .foot{
-    width: 1903px;
+    width: 100%;
     background: #0D1730;
 
 }
 .foot_log{
+    width:100%;
 
     text-align: center;
 
