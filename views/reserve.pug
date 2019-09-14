@@ -1,0 +1,674 @@
+doctype html
+head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    meta(name='apple-touch-fullscreen', content='yes')
+    meta(name='format-detection', content='telephone=no')
+    meta(content='no-cache', http-equiv='Pragma')
+    title &#x514D;&#x8D39;&#x9884;&#x7EA6;&#x91CF;&#x4F53;
+    meta(name='Keywords', content='衣邦人 贝嘟科技 量身定制 触手可及 男士正装 女士旗袍 美女着装顾问 特斯拉 上门量体 凯莱乔治 李加林 私人定制')
+    meta(name='Description', content='衣邦人 贝嘟科技 量身定制 触手可及 男士正装 女士旗袍 美女着装顾问 特斯拉 上门量体 凯莱乔治 李加林 私人定制')
+    script(src='/Public/js/swiper.min.js')
+    link(rel='stylesheet', href='css/swiper.min.css')
+    script(src='/Public/js/jquery.1.7.2.min.js')
+    script(type='text/javascript', src='/Public/js/jquery.cityselect.new.js')
+    script(type='application/javascript', src='https://ossstatic.ybren.com/Public/js/noncestamp.js')
+    link(rel='stylesheet', href='/Public/css/swiper.min.css')
+    link(rel='shortcut icon', href='/Public/img/favicon.ico')
+    link(href='stylesheets/reserve.css', rel='stylesheet')
+    style(type='text/css').
+        body,p,form,h1,h2,h3,h4,h5,h6,ul,li,section,div,*{padding:0;margin:0}
+        ul,ol,li{list-style:none; vertical-align: top;}
+        img{border:0}
+        a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #ECECEC;
+            overflow-x: hidden;
+            font-family:"Microsoft YaHei",微软雅黑,sans-serif;
+        }
+        .banner{overflow: hidden;}
+        .banner img{float: left;width: 100%;}
+        .phone{padding:50px 0 50px;text-align: center;background: #ECECEC;width: 600px;margin: 0 auto;}
+        .phone_2{color: #5D5D5D;height: 40px;line-height: 40px;font-size: 16px;overflow: hidden;padding-left: 125px;}
+        .phone_2 span{float: left;height: 40px;line-height: 40px;}
+        .pnum{font-style: normal;color:#BA9223;font-weight: bold;font-size:22px;margin: 0 10px;padding:0 5px;height:40px;text-decoration: underline;}
+        .content{width:100%;margin:0 auto;text-align: center;background: #ECECEC;padding-bottom: 50px;}
+        .content ul{overflow: hidden;width:752px;margin:0 auto;}
+        .content ul li{overflow: hidden;padding:0px 20px;border:1px solid #ADADAD;height:60px;margin-bottom:36px;line-height:60px;width:708px;border-radius: 10px;}
+        .content ul li label{width:150px;float:left;height:60px;overflow: hidden;}
+        .content ul li label img{float:left;padding-top:11px;width: 40px;height: 40px;}
+        .content ul li label span{padding:0px 0 0 15px;float:left;font-size:18px;height:60px;}
+        .content ul li input,select,textarea{
+            width:500px;float:left;height:60px;-webkit-appearance: none; font-size:16px;outline: none;-webkit-tap-highlight-color:rgba(0,0,0,0);
+            /*for chrome*/appearance: none;background:none;box-sizing: border-box;border: none;}
+        .content ul li 	textarea{padding-top:20px;resize:none;}
+        #city{overflow: hidden;}
+        #city select{width: 25.9%;height: 60px;-webkit-appearance: none;appearance: none;border-right:none;}
+        #city select:first-child{}
+        #city select:last-child{border-left:none;width:23.2%;}
+        #city select:nth-child(odd){border-left:none;border-right: none;}
+        .content .button{text-align: center;margin:10px 0;}
+        .content .button input{width:750px;cursor: pointer;}
+        .banner2{width:100%;height:604px;background: url(img/slide_bg.jpg) no-repeat center center;background-size:cover ;padding-top: 273px;}
+        .swiper-container{width:1100px;height:507px;margin: 0 auto;padding-bottom: 50px;}
+        .swiper-slide{overflow: hidden;}
+        .swiper-slide a{display: block;width:100%;height: 507px;}
+        .swiper-pagination-bullet{background: #FFFFFF;}
+        .swiper-pagination-bullet-active {background: #D5AE45;width: 10px;height: 10px;}
+        .desc{width: 100%;background: #FFFFFF;padding: 50px 0;}
+        .desc .scope{margin: 0 auto;width: 1000px;}
+        .desc .scope .title{text-align: center;}
+        .desc .scope .title .p1{font-weight: bold;color: #606060;font-size: 26px;}
+        .desc .scope .title .p2{padding: 14px 0 10px;}
+        .desc .scope .title .p2 span{padding: 20px 20px;border-bottom: 1px solid #EEEEEE;color: #5F5F5F;}
+        .desc .scope .title .p3{padding: 40px 0;color: #606060;font-size: 22px;}
+        .desc .scope .scon{border-bottom: 1px solid #CCCCCC;padding-bottom: 30px;}
+        .desc .scope .scon p{overflow: hidden;line-height:40px;}
+        .desc .scope .scon p .left{float: left;width:100px;color: #222222;font-size:17px;}
+        .desc .scope .scon p .right{float: left;width:900px;color: #676767;font-size:16px;}
+        .desc .addr{width: 1000px;margin: 0 auto;font-size: 15px;}
+        .desc .addr .addrtit{text-align: center;color: #222222;padding: 30px 0;font-size:20px;}
+        .desc .addr ul{}
+        .desc .addr ul li{display:inline-block;width: 500px;color: #606060;line-height:28px;}
+script(src='/asset/js/saCollectData.js')
+script.
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-86988233-1', 'auto');
+    ga('send', 'pageview');
+// <div style="display:none">
+script.
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?9618726c6a17a014651e4fedc8a09130";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+//
+  <style type="text/css">
+  #qiao-wrap{display: none!important;}
+  </style>
+style(type='text/css').
+    #YSF-BTN-HOLDER{display: none!important;}
+.head
+    // 头部
+    .topbar
+        .topbar_icon
+            .topbar_icon_div
+                img(src='images/free@2x.png')
+                span &#x4E0A;&#x95E8;&#x91CF;&#x4F53;
+            .topbar_icon_div
+                img(src='images/top@2x.png')
+                span &#x9AD8;&#x7AEF;&#x5B9A;&#x5236;
+            .topbar_icon_div
+                img(src='images/10day@2x.png')
+                span &#x5FEB;&#x901F;&#x53D1;&#x8D27;
+            .topbar_icon_div
+                img(src='images/30day@2x.png')
+                span &#x65E0;&#x5FE7;&#x552E;&#x540E;
+        .chinese_to_english
+            // 20190402颜鹏要求去除跳转英语站
+            // <span style="font-size: 16px;font-weight: bold;">English</span>
+            // <span style="font-size: 19px;color: #9C9C9C;">/</span>
+            // <span style="font-size: 12px;color: #9C9C9C;">中文</span>
+        a.logo(href='http://www.ybren.com/')
+            img(src='images/logo@2x.png', alt='贝嘟科技')
+.nav
+    ul.son
+        li
+            a(href='//www.ybren.com') &#x9996;&#x9875;
+        li.son_li
+            a.click(href='javascript:;') &nbsp;&#x4EA7;&#x54C1;&nbsp;
+            ul
+                li
+                    a(href='/home/category/137') &#x7537;&#x58EB;&#x897F;&#x88C5;
+                li
+                    a(href='/home/category/140') &#x7537;&#x58EB;&#x886C;&#x886B;
+                li
+                    a(href='/home/category/142') &#x7537;&#x58EB;&#x88E4;&#x88C5;
+                li
+                    a(href='/home/category/143') &#x7537;&#x58EB;&#x7F8A;&#x6BDB;/&#x7F8A;&#x7ED2;&#x886B;
+                li
+                    a(href='/home/category/141') &#x7537;&#x58EB;&#x5916;&#x5957;
+                li
+                    a(href='/home/category/296') &#x7537;&#x58EB;&#x56E2;&#x8D2D;&#x5B9A;&#x5236;&#x7CBE;&#x9009;
+                li
+                    a(href='/home/category/145') &#x5973;&#x58EB;&#x897F;&#x88C5;
+                li
+                    a(href='/home/category/146') &#x5973;&#x58EB;&#x886C;&#x886B;
+                li
+                    a(href='/home/category/266') &#x5973;&#x58EB;&#x88D9;/&#x88E4;&#x88C5;
+                li
+                    a(href='/home/category/147') &#x5973;&#x58EB;&#x5916;&#x5957;
+                li
+                    a(href='/home/category/286') &#x7537;&#x88C5;&#x914D;&#x9970;
+        li.son_li
+            a.click(href='javascript:void(0);') &#x9AD8;&#x7AEF;&#x5B9A;&#x5236;
+            ul
+                // <li><a href="/index.php/Home/Index/Fabric">国际面料</a></li>
+                li
+                    a(href='/Home/Index/maintenance') &#x4FDD;&#x517B;&#x624B;&#x518C;
+                li
+                    a(href='/Home/Activity/Daka') &#x5927;&#x5496;&#x5B9A;&#x5236;&#x79C0;
+                li
+                    a(href='/Home/Index/brandCooper') &#x5408;&#x4F5C;&#x54C1;&#x724C;
+                li
+                    a(href='/Home/Index/service') &#x552E;&#x540E;&#x670D;&#x52A1;
+        li
+            a(href='/Home/Index/yuyue') &#x9884;&#x7EA6;&#x91CF;&#x4F53;
+        // <li  ><a  href="/index.php/Home/Activity/YbrenerReg">衣邦客</a></li>
+        div(style='clear: both;')
+script(type='text/javascript').
+    function kefu(){
+        var H = $(window).height();
+        var W = $(window).width();
+        var t = H/2-250;
+        var l = W/2-250;
+        window.open("http://bdkj.udesk.cn/im_client/?web_plugin_id=18433","","top="+t+",left="+l+",width=500,height=500");
+    }
+    $(function() {
+        $('.r3').hover(function(){
+            $('.wx_code').show();
+        },function(){
+            $('.wx_code').hide();
+        });
+        $('.r4').hover(function(){
+            $('.app_code').show();
+        },function(){
+            $('.app_code').hide();
+        });
+    });
+.right_sevice
+    a.r1(onclick='kefu()') &#x5728;&#x7EBF;&#x5BA2;&#x670D;
+    a.r3(href='###') &#x5B98;&#x65B9;&#x5FAE;&#x4FE1;
+    a.r4(href='###') APP&#x4E0B;&#x8F7D;
+    a.r2(href='/Home/Index/yuyue')
+    img.wx_code(src='images/WeixinHover_01.png')
+    img.app_code(src='images/AppHover_01.png')
+script(type='text/javascript').
+    function kefu(){
+        var H = $(window).height();
+        var W = $(window).width();
+        var t = H/2-250;
+        var l = W/2-250;
+        window.open("http://bdkj.udesk.cn/im_client/?web_plugin_id=18433","","top="+t+",left="+l+",width=500,height=500");
+    }
+    $(function() {
+        $('.r3').hover(function(){
+            $('.wx_code').show();
+        },function(){
+            $('.wx_code').hide();
+        });
+        $('.r4').hover(function(){
+            $('.app_code').show();
+        },function(){
+            $('.app_code').hide();
+        });
+    });
+// 头部
+.banner
+    a(href='')
+        img.banimg(src='images/banner_yuyue.jpg')
+.banner
+    img(src='images/yy01.jpg')
+    img(src='images/yy02.jpg')
+#1F.phone(name='1F')
+    p.phone_2
+        span &#x5168;&#x56FD;&#x5DF2;&#x6709;
+        span#yuyueNum.pnum 1047980
+        span &#x4EBA;&#x4EAB;&#x53D7;&#x8863;&#x90A6;&#x4EBA;&#x91CF;&#x8EAB;&#x5B9A;&#x5236;
+.content
+    form(action='', enctype='multipart/form-data', method='post', name='quantity')
+        ul
+            li
+                label.con-le(for='name')
+                    img(src='images/name.png')
+                    span &#x59D3;&#x540D;
+                input#name(type='text', name='name', value='', placeholder='输入姓名，免费预约美女上门量体')
+            li
+                label(for='tel')
+                    img(src='images/phone.png')
+                    span &#x7535;&#x8BDD;
+                input#tel(type='tel', name='tel', value='', placeholder='输入号码，享受一对一专人服务')
+            li#city
+                label(for='city')
+                    img(src='images/addr.png')
+                    span &#x5730;&#x533A;
+                select#prov.prov
+                    option(value='请选择') &#x8BF7;&#x9009;&#x62E9;
+                    option(value='北京') &#x5317;&#x4EAC;
+                    option(value='天津') &#x5929;&#x6D25;
+                    option(value='河北') &#x6CB3;&#x5317;
+                    option(value='山西') &#x5C71;&#x897F;
+                    option(value='辽宁') &#x8FBD;&#x5B81;
+                    option(value='吉林') &#x5409;&#x6797;
+                    option(value='黑龙江') &#x9ED1;&#x9F99;&#x6C5F;
+                    option(value='上海') &#x4E0A;&#x6D77;
+                    option(value='江苏') &#x6C5F;&#x82CF;
+                    option(value='浙江') &#x6D59;&#x6C5F;
+                    option(value='安徽') &#x5B89;&#x5FBD;
+                    option(value='福建') &#x798F;&#x5EFA;
+                    option(value='江西') &#x6C5F;&#x897F;
+                    option(value='山东') &#x5C71;&#x4E1C;
+                    option(value='河南') &#x6CB3;&#x5357;
+                    option(value='湖北') &#x6E56;&#x5317;
+                    option(value='湖南') &#x6E56;&#x5357;
+                    option(value='广东') &#x5E7F;&#x4E1C;
+                    option(value='广西') &#x5E7F;&#x897F;
+                    option(value='重庆') &#x91CD;&#x5E86;
+                    option(value='四川') &#x56DB;&#x5DDD;
+                    option(value='贵州') &#x8D35;&#x5DDE;
+                    option(value='云南') &#x4E91;&#x5357;
+                    option(value='陕西') &#x9655;&#x897F;
+                    option(value='新疆') &#x65B0;&#x7586;
+                select#ccity.city
+                    option(value='请选择') &#x8BF7;&#x9009;&#x62E9;
+                select#dist.dist
+                    option(value='请选择') &#x8BF7;&#x9009;&#x62E9;
+            li#smtime
+                label(for='time')
+                    img(src='images/time.png')
+                    span &#x65F6;&#x95F4;
+                select#ddate(name='time')
+            li
+                label(for='note')
+                    img(src='images/desc.png')
+                    span &#x5730;&#x5740;
+                textarea#note(type='tel', name='note', value='', placeholder='请填写详细地址，以便为您上门量体')
+        p.ptips(style='overflow: hidden;height: 30px;line-height: 30px;padding:0px 15px 10px;font-size: 16px;width: 710px;margin: 0 auto;')
+            img(src='images/choose.png', style='float: left;width:20px;padding: 5px;')
+            span(style='float: left;') &#x9884;&#x7EA6;&#x5373;&#x9ED8;&#x8BA4;&#x540C;&#x610F;
+            a(style='float: left;color:#CFAF40;text-decoration: underline;', href='/index.php/Home/Index/userAgreement.html') &#x300A;&#x8863;&#x90A6;&#x4EBA;&#x7528;&#x6237;&#x534F;&#x8BAE;&#x300B;
+        .button
+            input(type='image', form='quantity', onclick='javascript:yuyue();', src='images/button.jpg')
+style.
+    #smtime{display: none;}
+script.
+    $(function () {
+        $('#city').citySelect({
+            prov: '请选择',
+            city: '请选择',
+            dist: '请选择',
+            nodata: 'none'
+        })
+        $('.s_bot').click(function () {
+            $('.shade').hide()
+            $('.osure').hide()
+        })
+    })
+    function yuyue () {
+        var bh = $('body').height()
+        $('.shade').css({
+            'width': '100%',
+            'height': bh + 'px'
+        })
+        var sh = $('body').scrollTop()
+        var wh = $(window).height()
+        var selfh = $('.osure').height() / 2
+        var H = sh + wh / 2 - selfh
+        $('.osure').css('top', H + 'px')
+        var name = $('#name').val()
+        if (name == '') {
+            alert('请输入姓名')
+            return
+        }
+        var tel = $('#tel').val()
+        var telReg = !!tel.match(/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/)
+        //如果手机号码不能通过验证
+        if (telReg == false) {
+            alert('请输入正确手机号码')
+            return
+        }
+        var sex = ''
+        var height = ''
+        var weight = ''
+        var category = ''
+        var ddate = $('#ddate').val()
+        var address = $('#note').val()
+        var note = ''
+        var prov = $('#prov').val()
+        var city = $('#ccity').val()
+        var dist = $('#dist').val()
+        if (prov == '请选择' || city == '请选择' || dist == '请选择' || prov == null || city == null || dist == null) {
+            alert('请输入省市区')
+            return false
+        }
+        if (address == '' || address == null) {
+            alert('请输入地址')
+            return false
+        }
+        var from = ''
+        var keywords = ''
+        var plan = ''
+        var idea = ''
+        var spread_code = ''
+        var aid = ''
+        if (aid == 4) {
+            _taq.push({ convert_id: '55378709639', event_type: 'form' }) //今日头条统计代码
+        }
+        // 接口地址更换
+        var yuyueDomain = 'https://eapi.ybren.com'
+        var tempFirstDomain = location.host.split('.')[0]
+        if (/^dev|dev$|^test|test$|^localhost|^192/gi.test(tempFirstDomain)) {
+            yuyueDomain = 'https://eapitest.ybren.com'
+        }
+        var tempSaData = {
+            date_channel: from,
+            user_name: name,
+            user_province: prov,
+            user_city: city,
+            user_district: dist,
+            measurement_address: address,
+            is_success: false,
+            fail_reason: ''
+        }
+        // 转圈等待
+        apiPost(yuyueDomain + '/Apiweb/yuyue', {
+            'name': name,
+            'sex': sex,
+            'height': height,
+            'weight': weight,
+            'tel': tel,
+            'category': category,
+            'appDateTime': ddate,
+            'address': address,
+            'note': note,
+            'prov': prov,
+            'city': city,
+            'dist': dist,
+            'from': from,
+            'keywords': keywords,
+            'plan': plan,
+            'idea': idea,
+            'subtype': 1,
+            'spread_code': spread_code
+        }, function (res) {
+            if (res['Status'] === 1) {
+                alert(res.Data.message)
+                $('#name').val('')
+                $('#tel').val('')
+                $('#note').val('')
+                tempSaData['is_success'] = true
+                ybrSensors.track('reserveToTakeMeasurement', tempSaData)
+            } else {
+                alert(res['ErrorMsg'])
+                tempSaData['fail_reason'] = res['ErrorMsg']
+                ybrSensors.track('reserveToTakeMeasurement', tempSaData)
+            }
+        })
+    }
+.banner2
+    .swiper-container.swiper-container-horizontal
+        .swiper-wrapper(style='transition-duration: 0ms;')
+            .swiper-slide.swiper-slide-prev(style='width: 1100px;')
+                a(target='_blank', href='javascript:void(0)', style='background: url(../images/slide01.jpg) no-repeat center;')
+        // Add Pagination
+        .swiper-pagination.swiper-pagination-clickable
+            span.swiper-pagination-bullet
+            span.swiper-pagination-bullet.swiper-pagination-bullet-active
+            span.swiper-pagination-bullet
+script.
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay : 3000,
+    });
+.desc
+    .scope
+        .title
+            p.p1 &#x8863;&#x90A6;&#x4EBA;&#x670D;&#x52A1;&#x8303;&#x56F4;
+            p.p2
+                span &#x8863;&#x90A6;&#x4EBA;&#x73B0;&#x5DF2;&#x7ECF;&#x5F00;&#x8BBE;47&#x4E2A;&#x5C55;&#x5385;&#xFF0C;&#x8986;&#x76D6;138&#x4E2A;&#x57CE;&#x5E02;
+            p.p3
+                | &#x8986;&#x76D6;&#x5168;&#x56FD;
+                span.pnum 138
+                | &#x4E2A;&#x7701;&#x5E02;
+        .scon
+            p
+                span.left &#x534E;&#x5317;&#x5730;&#x533A;&#xFF1A;
+                span.right
+                    | &#x5317;&#x4EAC;&#x5168;&#x5883;&#x3001;&#x5929;&#x6D25;&#x5168;&#x5883;&#x3001;&#x6CB3;&#x5317;(&#x77F3;&#x5BB6;&#x5E84;&#x5E02;&#x3001;&#x5510;&#x5C71;&#x5E02;&#x3001;&#x90AF;&#x90F8;&#x5E02;&#x3001;&#x90A2;&#x53F0;&#x5E02;&#x3001;&#x4FDD;&#x5B9A;&#x5E02;&#x3001;&#x6CA7;&#x5DDE;&#x5E02;&#x3001;&#x8861;&#x6C34;&#x5E02;)&#x3001;&#x5C71;&#x897F;(&#x592A;&#x539F;&#x5E02;&#x3001;&#x5927;&#x540C;&#x5E02;&#x3001;&#x9633;&#x6CC9;&#x5E02;&#x3001;&#x8FD0;&#x57CE;&#x5E02;&#x3001;&#x4E34;&#x6C7E;&#x5E02;)
+            p
+                span.left &#x4E1C;&#x5317;&#x5730;&#x533A;&#xFF1A;
+                span.right
+                    | &#x8FBD;&#x5B81;(&#x6C88;&#x9633;&#x5E02;&#x3001;&#x5927;&#x8FDE;&#x5E02;&#x3001;&#x978D;&#x5C71;&#x5E02;&#x3001;&#x4E39;&#x4E1C;&#x5E02;&#x3001;&#x8425;&#x53E3;&#x5E02;&#x3001;&#x76D8;&#x9526;&#x5E02;)&#x3001;&#x5409;&#x6797;(&#x957F;&#x6625;&#x5E02;&#x3001;&#x5409;&#x6797;&#x5E02;)&#x3001;&#x9ED1;&#x9F99;&#x6C5F;(&#x54C8;&#x5C14;&#x6EE8;&#x5E02;&#x3001;&#x5927;&#x5E86;&#x5E02;)
+            p
+                span.left &#x534E;&#x4E1C;&#x5730;&#x533A;&#xFF1A;
+                span.right
+                    | &#x4E0A;&#x6D77;(&#x4E0A;&#x6D77;&#x5E02;&#x8F96;&#x533A;)&#x3001;&#x6C5F;&#x82CF;&#x5168;&#x5883;&#x3001;&#x6D59;&#x6C5F;&#x5168;&#x5883;&#x3001;&#x5B89;&#x5FBD;(&#x5408;&#x80A5;&#x5E02;&#x3001;&#x829C;&#x6E56;&#x5E02;&#x3001;&#x868C;&#x57E0;&#x5E02;&#x3001;&#x6DEE;&#x5357;&#x5E02;&#x3001;&#x9A6C;&#x978D;&#x5C71;&#x5E02;&#x3001;&#x5B89;&#x5E86;&#x5E02;&#x3001;&#x9EC4;&#x5C71;&#x5E02;&#x3001;&#x6EC1;&#x5DDE;&#x5E02;&#x3001;&#x5BBF;&#x5DDE;&#x5E02;&#x3001;&#x516D;&#x5B89;&#x5E02;)&#x3001;&#x798F;&#x5EFA;(&#x798F;&#x5DDE;&#x5E02;&#x3001;&#x53A6;&#x95E8;&#x5E02;&#x3001;&#x8386;&#x7530;&#x5E02;&#x3001;&#x6CC9;&#x5DDE;&#x5E02;&#x3001;&#x6F33;&#x5DDE;&#x5E02;&#x3001;&#x9F99;&#x5CA9;&#x5E02;&#x3001;&#x5B81;&#x5FB7;&#x5E02;)&#x3001;&#x6C5F;&#x897F;(&#x5357;&#x660C;&#x5E02;&#x3001;&#x4E5D;&#x6C5F;&#x5E02;&#x3001;&#x65B0;&#x4F59;&#x5E02;&#x3001;&#x5B9C;&#x6625;&#x5E02;&#x3001;&#x629A;&#x5DDE;&#x5E02;&#x3001;&#x4E0A;&#x9976;&#x5E02;)&#x3001;&#x5C71;&#x4E1C;(&#x6D4E;&#x5357;&#x5E02;&#x3001;&#x9752;&#x5C9B;&#x5E02;&#x3001;&#x6DC4;&#x535A;&#x5E02;&#x3001;&#x67A3;&#x5E84;&#x5E02;&#x3001;&#x70DF;&#x53F0;&#x5E02;&#x3001;&#x6F4D;&#x574A;&#x5E02;&#x3001;&#x6CF0;&#x5B89;&#x5E02;&#x3001;&#x5A01;&#x6D77;&#x5E02;)
+            p
+                span.left &#x534E;&#x4E2D;&#x5730;&#x533A;&#xFF1A;
+                span.right
+                    | &#x6CB3;&#x5357;(&#x90D1;&#x5DDE;&#x5E02;&#x3001;&#x5F00;&#x5C01;&#x5E02;&#x3001;&#x6D1B;&#x9633;&#x5E02;&#x3001;&#x5E73;&#x9876;&#x5C71;&#x5E02;&#x3001;&#x5B89;&#x9633;&#x5E02;&#x3001;&#x65B0;&#x4E61;&#x5E02;&#x3001;&#x8BB8;&#x660C;&#x5E02;)&#x3001;&#x6E56;&#x5317;(&#x6B66;&#x6C49;&#x5E02;&#x3001;&#x5B9C;&#x660C;&#x5E02;&#x3001;&#x9102;&#x5DDE;&#x5E02;&#x3001;&#x5B5D;&#x611F;&#x5E02;&#x3001;&#x8346;&#x5DDE;&#x5E02;&#x3001;&#x9EC4;&#x5188;&#x5E02;&#x3001;&#x7701;&#x8F96;&#x5E02;)&#x3001;&#x6E56;&#x5357;(&#x957F;&#x6C99;&#x5E02;&#x3001;&#x682A;&#x6D32;&#x5E02;&#x3001;&#x6E58;&#x6F6D;&#x5E02;&#x3001;&#x8861;&#x9633;&#x5E02;&#x3001;&#x5CB3;&#x9633;&#x5E02;&#x3001;&#x76CA;&#x9633;&#x5E02;)
+            p
+                span.left &#x534E;&#x5357;&#x5730;&#x533A;&#xFF1A;
+                span.right
+                    | &#x5E7F;&#x4E1C;(&#x5E7F;&#x5DDE;&#x5E02;&#x3001;&#x6DF1;&#x5733;&#x5E02;&#x3001;&#x73E0;&#x6D77;&#x5E02;&#x3001;&#x6C55;&#x5934;&#x5E02;&#x3001;&#x4F5B;&#x5C71;&#x5E02;&#x3001;&#x8302;&#x540D;&#x5E02;&#x3001;&#x60E0;&#x5DDE;&#x5E02;&#x3001;&#x6885;&#x5DDE;&#x5E02;&#x3001;&#x9633;&#x6C5F;&#x5E02;&#x3001;&#x4E1C;&#x839E;&#x5E02;&#x3001;&#x4E2D;&#x5C71;&#x5E02;&#x3001;&#x6F6E;&#x5DDE;&#x5E02;&#x3001;&#x63ED;&#x9633;&#x5E02;)&#x3001;&#x5E7F;&#x897F;(&#x5357;&#x5B81;&#x5E02;&#x3001;&#x67F3;&#x5DDE;&#x5E02;&#x3001;&#x5317;&#x6D77;&#x5E02;&#x3001;&#x94A6;&#x5DDE;&#x5E02;&#x3001;&#x767E;&#x8272;&#x5E02;)
+            p
+                span.left &#x897F;&#x5357;&#x5730;&#x533A;&#xFF1A;
+                span.right
+                    | &#x91CD;&#x5E86;&#x5168;&#x5883;&#x3001;&#x56DB;&#x5DDD;(&#x6210;&#x90FD;&#x5E02;&#x3001;&#x5FB7;&#x9633;&#x5E02;&#x3001;&#x7EF5;&#x9633;&#x5E02;)&#x3001;&#x8D35;&#x5DDE;(&#x8D35;&#x9633;&#x5E02;&#x3001;&#x516D;&#x76D8;&#x6C34;&#x5E02;&#x3001;&#x9075;&#x4E49;&#x5E02;&#x3001;&#x5B89;&#x987A;&#x5E02;&#x3001;&#x6BD5;&#x8282;&#x5E02;&#x3001;&#x94DC;&#x4EC1;&#x5E02;)&#x3001;&#x4E91;&#x5357;(&#x6606;&#x660E;&#x5E02;&#x3001;&#x66F2;&#x9756;&#x5E02;&#x3001;&#x7389;&#x6EAA;&#x5E02;)
+            p
+                span.left &#x897F;&#x5317;&#x5730;&#x533A;&#xFF1A;
+                span.right
+                    | &#x9655;&#x897F;(&#x897F;&#x5B89;&#x5E02;&#x3001;&#x54B8;&#x9633;&#x5E02;&#x3001;&#x6E2D;&#x5357;&#x5E02;)&#x3001;&#x65B0;&#x7586;(&#x4E4C;&#x9C81;&#x6728;&#x9F50;&#x5E02;&#x3001;&#x514B;&#x62C9;&#x739B;&#x4F9D;&#x5E02;&#x3001;&#x660C;&#x5409;&#x56DE;&#x65CF;&#x81EA;&#x6CBB;&#x5DDE;&#x3001;&#x4F0A;&#x7281;&#x54C8;&#x8428;&#x514B;&#x81EA;&#x6CBB;&#x5DDE;&#x3001;&#x7701;&#x8F96;&#x5E02;)
+    .addr
+        .addrtit &#x5C55;&#x5385;&#x5730;&#x5740;
+        ul
+            li
+                font(color='#222222') &#x676D;&#x5DDE;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6D59;&#x6C5F;&#x7701;&#x676D;&#x5DDE;&#x5E02;&#x6C5F;&#x5E72;&#x533A;&#x4E5D;&#x5821;&#x7EFF;&#x8C37;6&#x5E62;6&#x697C;
+            li
+                font(color='#222222') &#x4E0A;&#x6D77;&#x5C55;&#x5385;&#xFF1A;
+                | &#x4E0A;&#x6D77;&#x5E02;&#x9759;&#x5B89;&#x533A;&#x5357;&#x4EAC;&#x897F;&#x8DEF;819&#x53F7;&#x4E2D;&#x521B;&#x5927;&#x53A6;1807&#x5BA4;
+            li
+                font(color='#222222') &#x5317;&#x4EAC;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5317;&#x4EAC;&#x5E02;&#x671D;&#x9633;&#x533A;&#x66D9;&#x5149;&#x897F;&#x91CC;&#x7532;1&#x53F7;&#x7B2C;&#x4E09;&#x7F6E;&#x4E1A;&#x5927;&#x53A6;B-1001
+            li
+                font(color='#222222') &#x6DF1;&#x5733;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5E7F;&#x4E1C;&#x7701;&#x6DF1;&#x5733;&#x5E02;&#x798F;&#x7530;&#x533A;&#x798F;&#x7530;&#x8857;&#x9053;&#x5F69;&#x7530;&#x8DEF;3069&#x53F7;&#x661F;&#x6CB3;&#x4E16;&#x7EAA;&#x5927;&#x53A6;A&#x5EA7;1502&#x3001;1512-1518
+            li
+                font(color='#222222') &#x5E7F;&#x5DDE;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5E7F;&#x4E1C;&#x7701;&#x5E7F;&#x5DDE;&#x5E02;&#x5929;&#x6CB3;&#x533A;&#x6797;&#x548C;&#x897F;&#x8DEF;&#x4E2D;&#x77F3;&#x5316;&#x5927;&#x53A6;B&#x5854;20&#x697C;2001&#x5BA4;
+            li
+                font(color='#222222') &#x957F;&#x6C99;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6E56;&#x5357;&#x7701;&#x957F;&#x6C99;&#x5E02;&#x5929;&#x5FC3;&#x533A;&#x534E;&#x8FDC;&#x56FD;&#x9645;&#x4E2D;&#x5FC3;3011-12
+            li
+                font(color='#222222') &#x5929;&#x6D25;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5929;&#x6D25;&#x5E02;&#x6CB3;&#x897F;&#x533A;&#x5357;&#x4EAC;&#x8DEF;39&#x53F7;&#x51EF;&#x5FB7;&#x56FD;&#x8D38;B&#x5EA7;3102&#x5BA4;
+            li
+                font(color='#222222') &#x5357;&#x4EAC;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6C5F;&#x82CF;&#x7701;&#x5357;&#x4EAC;&#x5E02;&#x79E6;&#x6DEE;&#x533A;&#x4E2D;&#x5C71;&#x5357;&#x8DEF;414&#x53F7;&#x6295;&#x8D44;&#x5927;&#x53A6;24H
+            li
+                font(color='#222222') &#x6E29;&#x5DDE;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6D59;&#x6C5F;&#x7701;&#x6E29;&#x5DDE;&#x5E02;&#x9E7F;&#x57CE;&#x533A;&#x65B0;&#x57CE;&#x5927;&#x9053;311&#x53F7;&#x4E2D;&#x901A;&#x5927;&#x53A6;10&#x697C;D&#x5BA4;
+            li
+                font(color='#222222') &#x6210;&#x90FD;&#x5C55;&#x5385;&#xFF1A;
+                | &#x56DB;&#x5DDD;&#x7701;&#x6210;&#x90FD;&#x5E02;&#x9752;&#x7F8A;&#x533A;&#x63D0;&#x7763;&#x8857;1&#x53F7;&#x96C4;&#x98DE;&#x4E2D;&#x5FC3;1610&#x5BA4;
+            li
+                font(color='#222222') &#x91CD;&#x5E86;&#x5C55;&#x5385;&#xFF1A;
+                | &#x91CD;&#x5E86;&#x5E02;&#x6E1D;&#x4E2D;&#x533A;&#x4E94;&#x4E00;&#x8DEF;99&#x53F7;&#x5E73;&#x5B89;&#x56FD;&#x9645;&#x91D1;&#x878D;&#x4E2D;&#x5FC3;18&#x697C;6-1
+            li
+                font(color='#222222') &#x6C88;&#x9633;&#x5C55;&#x5385;&#xFF1A;
+                | &#x8FBD;&#x5B81;&#x7701;&#x6C88;&#x9633;&#x5E02;&#x6C88;&#x6CB3;&#x533A;&#x9752;&#x5E74;&#x5927;&#x8857;209-2&#x53F7;&#x590F;&#x5BAB;&#x57CE;&#x5E02;&#x5E7F;&#x573A;3804-3805&#x5BA4;
+            li
+                font(color='#222222') &#x54C8;&#x5C14;&#x6EE8;&#x5C55;&#x5385;&#xFF1A;
+                | &#x9ED1;&#x9F99;&#x6C5F;&#x7701;&#x54C8;&#x5C14;&#x6EE8;&#x5E02;&#x5357;&#x5C97;&#x533A;&#x7EA2;&#x519B;&#x8857;15&#x53F7;&#x5965;&#x5A01;&#x65AF;&#x53D1;&#x5C55;&#x5927;&#x53A6;21&#x5C42;A&#x5EA7;
+            li
+                font(color='#222222') &#x6B66;&#x6C49;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6E56;&#x5317;&#x7701;&#x6B66;&#x6C49;&#x5E02;&#x6C5F;&#x6C49;&#x533A;&#x65B0;&#x534E;&#x8DEF;468&#x53F7;CFD&#x65F6;&#x4EE3;&#x8D22;&#x5BCC;&#x4E2D;&#x5FC3;2503
+            li
+                font(color='#222222') &#x897F;&#x5B89;&#x5C55;&#x5385;&#xFF1A;
+                | &#x897F;&#x5B89;&#x5E02;&#x83B2;&#x6E56;&#x533A;&#x5510;&#x5EF6;&#x8DEF;&#x5317;&#x6BB5;20&#x53F7;&#x592A;&#x548C;&#x65F6;&#x4EE3;&#x5E7F;&#x573A;A&#x5EA7;1206&#x5BA4;
+            li
+                font(color='#222222') &#x90D1;&#x5DDE;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6CB3;&#x5357;&#x7701;&#x90D1;&#x5DDE;&#x5E02;&#x90D1;&#x4E1C;&#x65B0;&#x533A;&#x5347;&#x9F99;&#x5E7F;&#x573A;3&#x53F7;&#x697C;A&#x5EA7;1101-1&#x5BA4;
+            li
+                font(color='#222222') &#x8D35;&#x9633;&#x5C55;&#x5385;&#xFF1A;
+                | &#x8D35;&#x5DDE;&#x7701;&#x8D35;&#x9633;&#x5E02;&#x5357;&#x660E;&#x533A;&#x82B1;&#x679C;&#x56ED;&#x4E2D;&#x592E;&#x5546;&#x52A1;&#x533A;6&#x53F7;2701-02&#x5BA4;
+            li
+                font(color='#222222') &#x77F3;&#x5BB6;&#x5E84;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6CB3;&#x5317;&#x7701;&#x77F3;&#x5BB6;&#x5E84;&#x5E02;&#x6865;&#x897F;&#x533A;&#x4F11;&#x95E8;&#x8857;3&#x53F7;&#x6EE8;&#x6C5F;&#x4F18;&#x8C37;&#x5927;&#x53A6;A1&#x53F7;&#x5546;&#x52A1;&#x529E;&#x516C;&#x697C;1401
+            li
+                font(color='#222222') &#x6D4E;&#x5357;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5C71;&#x4E1C;&#x7701;&#x6D4E;&#x5357;&#x5E02;&#x5E02;&#x4E2D;&#x533A;&#x7ECF;&#x56DB;&#x8DEF;5&#x53F7;&#x4E07;&#x8FBE;&#x5E7F;&#x573A;&#x5199;&#x5B57;&#x697C;A&#x5EA7;12B 1311-1312&#x5BA4;
+            li
+                font(color='#222222') &#x6606;&#x660E;&#x5C55;&#x5385;&#xFF1A;
+                | &#x4E91;&#x5357;&#x7701;&#x6606;&#x660E;&#x5E02;&#x76D8;&#x9F99;&#x533A;&#x7A7F;&#x91D1;&#x8DEF;272&#x53F7;&#x79A7;&#x745E;&#x90FD;A&#x5EA7;&#x6C38;&#x5B89;&#x56FD;&#x9645;3305&#x5BA4;
+            li
+                font(color='#222222') &#x53A6;&#x95E8;&#x5C55;&#x5385;&#xFF1A;
+                | &#x798F;&#x5EFA;&#x7701;&#x53A6;&#x95E8;&#x5E02;&#x601D;&#x660E;&#x533A;&#x53F0;&#x5357;&#x8DEF;77&#x53F7;&#x6C47;&#x91D1;&#x56FD;&#x9645;&#x4E2D;&#x5FC3;25&#x697C;2502&#x5BA4;
+            li
+                font(color='#222222') &#x82CF;&#x5DDE;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6C5F;&#x82CF;&#x7701;&#x82CF;&#x5DDE;&#x5E02;&#x5DE5;&#x4E1A;&#x56ED;&#x533A;&#x65FA;&#x58A9;&#x8DEF;188&#x53F7;&#x5EFA;&#x5C4B;&#x5927;&#x53A6;1&#x5E62;1117&#x5BA4;
+            li
+                font(color='#222222') &#x4E1C;&#x839E;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5E7F;&#x4E1C;&#x7701;&#x4E1C;&#x839E;&#x5E02;&#x4E1C;&#x57CE;&#x533A;&#x4E1C;&#x7EB5;&#x8DEF;208&#x53F7;&#x4E07;&#x8FBE;&#x5E7F;&#x573A;B&#x533A;6&#x5E62;1501&#x5BA4;
+            li
+                font(color='#222222') &#x5408;&#x80A5;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5B89;&#x5FBD;&#x7701;&#x5408;&#x80A5;&#x5E02;&#x8700;&#x5C71;&#x533A;&#x6F5C;&#x5C71;&#x8DEF;190&#x53F7;&#x534E;&#x90A6;&#x4E16;&#x8D38;&#x4E2D;&#x5FC3;A&#x5EA7;2303&#x5BA4;
+            li
+                font(color='#222222') &#x5B81;&#x6CE2;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6D59;&#x6C5F;&#x7701;&#x5B81;&#x6CE2;&#x5E02;&#x911E;&#x5DDE;&#x533A;&#x65E5;&#x4E3D;&#x4E2D;&#x8DEF;757&#x53F7;&#x5965;&#x514B;&#x65AF;&#x4E2D;&#x592E;&#x5927;&#x53A6;511&#x5BA4;
+            li
+                font(color='#222222') &#x5357;&#x660C;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6C5F;&#x897F;&#x7701;&#x5357;&#x660C;&#x5E02;&#x7EA2;&#x8C37;&#x6EE9;&#x65B0;&#x533A;&#x7EA2;&#x8C37;&#x4E2D;&#x5927;&#x9053;998&#x53F7;&#x5CF0;&#x521B;&#x56FD;&#x9645;808&#x5BA4;
+            li
+                font(color='#222222') &#x4E4C;&#x9C81;&#x6728;&#x9F50;&#x5C55;&#x5385;&#xFF1A;
+                | &#x65B0;&#x7586;&#x7EF4;&#x543E;&#x5C14;&#x81EA;&#x6CBB;&#x533A;&#x4E4C;&#x9C81;&#x6728;&#x9F50;&#x5E02;&#x5929;&#x5C71;&#x533A;&#x5149;&#x660E;&#x8DEF;59&#x53F7;&#x65F6;&#x4EE3;&#x5E7F;&#x573A;C&#x5EA7;13&#x697C;A&#x5BA4;
+            li
+                font(color='#222222') &#x592A;&#x539F;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5C71;&#x897F;&#x7701;&#x592A;&#x539F;&#x5E02;&#x5C0F;&#x5E97;&#x533A;&#x957F;&#x98CE;&#x5927;&#x8857;113&#x53F7;&#x4EB2;&#x8D24;&#x5343;&#x79A7;&#x5927;&#x53A6;1801&#x5BA4;
+            li
+                font(color='#222222') &#x798F;&#x5DDE;&#x5C55;&#x5385;&#xFF1A;
+                | &#x798F;&#x5EFA;&#x7701;&#x798F;&#x5DDE;&#x5E02;&#x53F0;&#x6C5F;&#x533A;&#x9CCC;&#x5CF0;&#x8857;&#x9053;&#x66D9;&#x5149;&#x652F;&#x8DEF;16&#x53F7;&#x6052;&#x4E30;&#x5927;&#x53A6;25&#x5C42;2511&#x5BA4;
+            li
+                font(color='#222222') &#x5F90;&#x5DDE;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6C5F;&#x82CF;&#x7701;&#x5F90;&#x5DDE;&#x5E02;&#x4E91;&#x9F99;&#x533A;&#x548C;&#x5E73;&#x5927;&#x9053;58&#x53F7;&#x4E07;&#x8FBE;&#x5E7F;&#x573A;&#x5199;&#x5B57;&#x697C;B&#x5EA7;1506&#x5BA4;
+            li
+                font(color='#222222') &#x957F;&#x6625;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5409;&#x6797;&#x7701;&#x957F;&#x6625;&#x5E02;&#x671D;&#x9633;&#x533A;&#x5DE5;&#x519C;&#x5927;&#x8DEF;5&#x53F7;&#x91D1;&#x8C37;&#x56FD;&#x9645;808&#x5BA4;
+            li
+                font(color='#222222') &#x5927;&#x8FDE;&#x5C55;&#x5385;&#xFF1A;
+                | &#x8FBD;&#x5B81;&#x7701;&#x5927;&#x8FDE;&#x5E02;&#x4E2D;&#x5C71;&#x533A;&#x4EBA;&#x6C11;&#x8DEF;15&#x53F7;&#x56FD;&#x9645;&#x91D1;&#x878D;&#x5927;&#x53A6;8F-C&#x5BA4;
+            li
+                font(color='#222222') &#x5357;&#x5B81;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5E7F;&#x897F;&#x7701;&#x5357;&#x5B81;&#x5E02;&#x4E1C;&#x76DF;&#x5546;&#x52A1;&#x533A;&#x4E2D;&#x67EC;&#x8DEF;8&#x53F7;&#x9F99;&#x5149;&#x4E16;&#x7EAA;B&#x5854;1303-1305&#x5BA4;
+            li
+                font(color='#222222') &#x73E0;&#x6D77;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5E7F;&#x4E1C;&#x7701;&#x73E0;&#x6D77;&#x5E02;&#x9999;&#x6D32;&#x533A;&#x51E4;&#x51F0;&#x5317;&#x8DEF;2099&#x53F7;&#x5B89;&#x5E7F;&#x4E16;&#x7EAA;&#x5927;&#x53A6;&#x4E94;&#x5C42;505&#x53F7;
+            li
+                font(color='#222222') &#x91D1;&#x534E;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6D59;&#x6C5F;&#x7701;&#x91D1;&#x534E;&#x5E02;&#x91D1;&#x4E1C;&#x533A;&#x4E1C;&#x5E02;&#x5357;&#x8857;&#x91D1;&#x534E;&#x4E07;&#x8FBE;&#x5E7F;&#x573A;5&#x53F7;&#x5199;&#x5B57;&#x697C;1407&#x5BA4;
+            li
+                font(color='#222222') &#x5357;&#x901A;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6C5F;&#x82CF;&#x7701;&#x5357;&#x901A;&#x5E02;&#x5D07;&#x5DDD;&#x533A;&#x5DE5;&#x519C;&#x8DEF;57&#x53F7;&#x5357;&#x901A;&#x5706;&#x878D;&#x5E7F;&#x573A;&#x5706;&#x878D;&#x4E2D;&#x5FC3;23&#x697C;2307&#x5BA4;
+            li
+                font(color='#222222') &#x9752;&#x5C9B;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5C71;&#x4E1C;&#x7701;&#x9752;&#x5C9B;&#x5E02;&#x5E02;&#x5317;&#x533A;&#x5353;&#x8D8A;&#x4E16;&#x7EAA;&#x4E2D;&#x5FC3;2&#x53F7;&#x697C;2303
+            li
+                font(color='#222222') &#x65E0;&#x9521;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6C5F;&#x82CF;&#x7701;&#x65E0;&#x9521;&#x5E02;&#x6881;&#x6EAA;&#x533A;&#x4EBA;&#x6C11;&#x4E2D;&#x8DEF;139&#x53F7;&#x65E0;&#x9521;&#x6052;&#x9686;&#x5E7F;&#x573A;&#x529E;&#x516C;&#x697C;1&#x5EA7;2701A
+            li
+                font(color='#222222') &#x6CC9;&#x5DDE;&#x5C55;&#x5385;&#xFF1A;
+                | &#x798F;&#x5EFA;&#x7701;&#x6CC9;&#x5DDE;&#x5E02;&#x664B;&#x6C5F;&#x533A;&#x6CC9;&#x5546;&#x5927;&#x53A6;13&#x697C;1305&#x5BA4;
+            li
+                font(color='#222222') &#x76D0;&#x57CE;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6C5F;&#x82CF;&#x7701;&#x76D0;&#x57CE;&#x5E02;&#x4EAD;&#x6E56;&#x533A;&#x4E16;&#x7EAA;&#x5927;&#x9053;5&#x53F7;&#x91D1;&#x878D;&#x57CE;4&#x5E62;1-905&#x5BA4;
+            li
+                font(color='#222222') &#x6F4D;&#x574A;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5C71;&#x4E1C;&#x7701;&#x6F4D;&#x574A;&#x5E02;&#x594E;&#x6587;&#x533A;&#x4E1C;&#x98CE;&#x4E1C;&#x8857;8570&#x53F7;&#x6CF0;&#x534E;&#x4E2D;&#x5FC3;1403
+            li
+                font(color='#222222') &#x70DF;&#x53F0;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5C71;&#x4E1C;&#x7701;&#x70DF;&#x53F0;&#x5E02;&#x829D;&#x7F58;&#x533A;&#x4E07;&#x8FBE;&#x5E7F;&#x573A;&#x4E07;&#x8FBE;&#x91D1;&#x878D;&#x4E2D;&#x5FC3;B&#x5EA7;1104
+            li
+                font(color='#222222') &#x4FDD;&#x5B9A;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6CB3;&#x5317;&#x7701;&#x4FDD;&#x5B9A;&#x5E02;&#x671D;&#x9633;&#x5357;&#x5927;&#x8857;358&#x53F7;&#x76DB;&#x6CF0;&#x4E2D;&#x56FD;01_1
+            li
+                font(color='#222222') &#x626C;&#x5DDE;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6C5F;&#x82CF;&#x7701;&#x626C;&#x5DDE;&#x5E02;&#x6C5F;&#x9633;&#x897F;&#x8DEF;&#x7EFF;&#x5730;&#x5546;&#x52A1;&#x5E7F;&#x573A;1&#x53F7;&#x697C;1610&#x5BA4;
+            li
+                font(color='#222222') &#x5609;&#x5174;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6D59;&#x6C5F;&#x7701;&#x5609;&#x5174;&#x5E02;&#x5357;&#x6E56;&#x533A;&#x5FBD;&#x5546;&#x5927;&#x53A6;1102-2&#x5BA4;
+            li
+                font(color='#222222') &#x5E38;&#x5DDE;&#x5C55;&#x5385;&#xFF1A;
+                | &#x6C5F;&#x82CF;&#x7701;&#x5E38;&#x5DDE;&#x5E02;&#x6B66;&#x8FDB;&#x533A;&#x5EF6;&#x653F;&#x4E2D;&#x5927;&#x9053;5&#x53F7;&#x5E38;&#x53D1;&#x5927;&#x53A6;1612&#x5BA4;
+            li
+                font(color='#222222') &#x6C55;&#x5934;&#x5C55;&#x5385;&#xFF1A;
+                | &#x5E7F;&#x4E1C;&#x7701;&#x6C55;&#x5934;&#x5E02;&#x91D1;&#x5E73;&#x533A;&#x957F;&#x5E73;&#x8DEF;90&#x53F7;&#x82CF;&#x5B81;&#x5E7F;&#x573A;&#x5199;&#x5B57;&#x697C;2&#x680B;1402&#x53F7;&#x623F;
+.foot
+    .foot_logo
+        img(src='images/foot03.jpg', alt='')
+    .fmidd
+        .fsec
+            ul.fsec1(style='margin-left: 150px;')
+                li(style='padding-bottom: 5px;padding-left: 0;')
+                    a.ftitle(target='_blank', href='javascript:void(0)') &#x5173;&#x4E8E;&#x6211;&#x4EEC;
+                li
+                    a(target='_blank', href='/Home/Index/company') &#x516C;&#x53F8;&#x7B80;&#x4ECB;
+                li
+                    a(target='_blank', href='/Home/Index/brandCooper') &#x5408;&#x4F5C;&#x54C1;&#x724C;
+                li
+                    a(target='_blank', href='/Home/Index/media') &#x65B0;&#x95FB;&#x52A8;&#x6001;
+                li
+                    a(target='_blank', href='/Home/Index/business') &#x5546;&#x52A1;&#x5408;&#x4F5C;
+            ul.fsec1
+                li(style='padding-bottom: 5px;padding-left: 0;color: #FFFFFF;')
+                    a.ftitle(target='_blank', href='javascript:void(0)') &#x4EA7;&#x54C1;&#x4E2D;&#x5FC3;
+                // <li><a target="_blank" href="/index.php/Home/Index/Fabric">面料品牌</a></li>
+                li
+                    a(target='_blank', href='/Home/Index/maintenance') &#x4FDD;&#x517B;&#x624B;&#x518C;
+                li
+                    a(target='_blank', href='/Home/Index/service') &#x552E;&#x540E;&#x670D;&#x52A1;
+                li
+                    a(target='_blank', href='/Home/Activity/Daka') &#x5927;&#x5496;&#x5B9A;&#x5236;&#x79C0;
+            ul.fsec1
+                li(style='padding-bottom: 5px;padding-left: 0;color: #FFFFFF;')
+                    a.ftitle(target='_blank', href='javascript:void(0)') &#x8054;&#x7CFB;&#x6211;&#x4EEC;
+                li
+                    a(target='_blank', href='/Home/Index/contact#zhanting') &#x5C55;&#x5385;&#x5730;&#x5740;
+                li
+                    a(target='_blank', href='/Home/Index/yuyue/10703/from/GW') &#x9884;&#x7EA6;&#x91CF;&#x4F53;
+                li
+                    a(target='_blank', href='/Home/Index/succeed') &#x98CE;&#x5C1A;&#x4EBA;&#x7269;
+                li
+                    a(target='_blank', href='/Home/Index/notice') &#x54C1;&#x724C;&#x58F0;&#x660E;
+            ul.fsec1
+                li(style='padding-bottom: 5px;padding-left: 0;color: #FFFFFF;')
+                    a.ftitle(target='_blank', href='javascript:void(0)') &#x9884;&#x7EA6;&#x70ED;&#x7EBF;
+                li 4001-180-666
+                li (&#x5317;&#x4EAC;&#x65F6;&#x95F4;9&#xFF1A;00-21&#xFF1A;30)
+                // <li>24小时客服在线</li>
+            .code
+                p
+                    img(src='images/code01.png')
+                p.pt &#x8863;&#x90A6;&#x4EBA;&#x516C;&#x4F17;&#x5FAE;&#x4FE1;&#x53F7;
+            .code
+                p
+                    img(src='images/code02.png')
+                p.pt &#x8863;&#x90A6;&#x4EBA;APP&#x5BA2;&#x6237;&#x7AEF;
+    .foot_logo_2
+        | &#x8863;&#x90A6;&#x4EBA;&#xFF0C;&#x7387;&#x5148;&#x5C06;&#x4E92;&#x8054;&#x7F51;&#xFF0C;&#x4E13;&#x4E1A;&#x7740;&#x88C5;&#x987E;&#x95EE;&#x4E0A;&#x95E8;&#x91CF;&#x4F53;&#xFF0C;&#x548C;&#x5DE5;&#x4E1A;4.0&#x6280;&#x672F;&#x5F15;&#x5165;&#x91CF;&#x8EAB;&#x5B9A;&#x5236;&#x884C;&#x4E1A;&#x7684;&#x670D;&#x88C5;&#x5B9A;&#x5236;&#x5E73;&#x53F0;&#x3002;&#x5BA2;&#x6237;&#x53EF;&#x4EE5;&#x514D;&#x8D39;&#x9884;&#x7EA6;&#x8863;&#x90A6;&#x4EBA;&#x7684;&#x4E13;&#x4E1A;&#x7740;&#x88C5;&#x987E;&#x95EE;&#xFF0C;&#x4E0A;&#x95E8;&#x91CF;&#x4F53;&#x91C7;&#x96C6;&#x8EAB;&#x6750;&#x6570;&#x636E;&#xFF0C;
+        br
+        | &#x5E76;&#x63D0;&#x4F9B;&#x4E13;&#x4E1A;&#x7740;&#x88C5;&#x5EFA;&#x8BAE;&#x3002;&#x63D0;&#x4F9B;&#x897F;&#x88C5;&#x5B9A;&#x505A;&#xFF0C;&#x897F;&#x670D;&#x5B9A;&#x5236;&#xFF0C;&#x5973;&#x58EB;&#x6B63;&#x88C5;&#xFF0C;&#x804C;&#x4E1A;&#x88C5;&#xFF0C;&#x5546;&#x52A1;&#x6B63;&#x88C5;&#x5B9A;&#x5236;&#xFF0C;&#x897F;&#x88C5;&#xFF0C;&#x886C;&#x886B;&#x5B9A;&#x5236;&#x7B49;&#x670D;&#x88C5;&#x5B9A;&#x5236;&#x670D;&#x52A1;&#x3002;
+        div(style='width:300px;margin:0 auto; padding:20px 0;')
+            a(target='_blank', href='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011802000773', style='display:inline-block;text-decoration:none;height:20px;line-height:20px;')
+                img(src='images/beian.png', style='float:left;width: 20px;height: 20px;')
+                p(style='float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;') &#x6D59;&#x516C;&#x7F51;&#x5B89;&#x5907; 33011802000773&#x53F7;
+    .infomation
+        p.p1 Copyright&copy;2015-2018 ybren.com,&nbsp;&nbsp;All Rights Reserved.
+        p.p2 &#x7248;&#x6743;&#x6240;&#x6709;:&#x676D;&#x5DDE;&#x8D1D;&#x561F;&#x79D1;&#x6280;&#x6709;&#x9650;&#x516C;&#x53F8;&nbsp;&nbsp;&nbsp;&#x6D59;ICP&#x5907;15008318&#x53F7;
+style(type='text/css').
+    #cnzz_stat_icon_1255644252{display: none;}
+    #cnzz_stat_icon_1257829290{display: none;}
+script(type='text/javascript').
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255644252'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1255644252%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+script(type='text/javascript').
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257829290'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1257829290%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
