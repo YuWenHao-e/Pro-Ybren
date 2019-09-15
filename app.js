@@ -12,6 +12,7 @@ var baoyangRouter = require('./routes/baoyang');
 var dakaxiuRouter = require('./routes/dakaxiu');
 var xijiezsRouter = require('./routes/xijiezs');
 var reserveRouter = require('./routes/reserve');
+var serviceRouter = require('./routes/service');
 
 
 var app = express();
@@ -34,6 +35,7 @@ app.use('/baoyang',baoyangRouter);
 app.use('/dakaxiu',dakaxiuRouter);
 app.use('/xijiezs',xijiezsRouter);
 app.use('/reserve',reserveRouter);
+app.use('/service',serviceRouter);
 
 
 
