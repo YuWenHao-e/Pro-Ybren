@@ -13,6 +13,7 @@ var dakaxiuRouter = require('./routes/dakaxiu');
 var xijiezsRouter = require('./routes/xijiezs');
 var reserveRouter = require('./routes/reserve');
 var serviceRouter = require('./routes/service');
+var nscsRouter = require('./routes/nscs');
 
 
 var app = express();
@@ -36,6 +37,7 @@ app.use('/dakaxiu',dakaxiuRouter);
 app.use('/xijiezs',xijiezsRouter);
 app.use('/reserve',reserveRouter);
 app.use('/service',serviceRouter);
+app.use('/nscs',nscsRouter);
 
 
 
