@@ -14,6 +14,7 @@ var xijiezsRouter = require('./routes/xijiezs');
 var reserveRouter = require('./routes/reserve');
 var serviceRouter = require('./routes/service');
 var nscsRouter = require('./routes/nscs');
+var nvsxzRouter = require('./routes/nvsxz');
 
 
 var app = express();
@@ -38,6 +39,7 @@ app.use('/xijiezs',xijiezsRouter);
 app.use('/reserve',reserveRouter);
 app.use('/service',serviceRouter);
 app.use('/nscs',nscsRouter);
+app.use('/nvsxz',nvsxzRouter);
 
 
 
