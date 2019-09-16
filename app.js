@@ -15,7 +15,7 @@ var reserveRouter = require('./routes/reserve');
 var serviceRouter = require('./routes/service');
 var nscsRouter = require('./routes/nscs');
 var nvsxzRouter = require('./routes/nvsxz');
-
+var pphzRouter = require('./routes/pphz');
 
 var app = express();
 
@@ -40,7 +40,7 @@ app.use('/reserve',reserveRouter);
 app.use('/service',serviceRouter);
 app.use('/nscs',nscsRouter);
 app.use('/nvsxz',nvsxzRouter);
-
+app.use('/pphz',pphzRouter);
 
 
 // catch 404 and forward to error handler
