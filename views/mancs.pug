@@ -1,0 +1,208 @@
+doctype html
+head
+    meta(charset='utf-8')
+    title &#x897F;&#x88C5;&#x5B9A;&#x5236;_&#x7537;&#x58EB;&#x897F;&#x88C5;&#x54C1;&#x724C;_&#x8863;&#x90A6;&#x4EBA;
+    link(rel='shortcut icon', href='/Public/img/favicon.ico')
+    style(type='text/css').
+        body,p,form,h1,h2,h3,h4,h5,h6,ul,li,section,div,*{padding:0;margin:0}
+        ul,ol,li{list-style:none; vertical-align: top;}
+        img{border:0}
+        a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #eff3f5;
+            overflow-x: hidden;
+            font-family:"Microsoft YaHei",微软雅黑,sans-serif;
+            color: #222222;
+        }
+        .nav{border-bottom: 1px solid #515151;}
+        .content{width: 1185px;margin:0 auto;padding:45px 0 90px;overflow: hidden;}
+        .content .left{width: 124px;margin-right:10px;float: left;height: 964px;background: #FFFFFF;font-size: 14px;padding-left: 20px;}
+        .content .left .li_title{height: 40px;font-size: 16px;color: #000000;line-height: 40px;text-align: left;font-weight: bold;background: none;letter-spacing:5px;text-indent:0;}
+        .content .left ul .fli{width: 124px;line-height: 34px;background: url(images/add.png) no-repeat;background-position:2px 12px;text-indent: 18px;cursor: pointer;font-size: 14px;}
+        .content .left ul .fli span{display: block;width:88px;border-bottom: 1px solid #E3E3E3;}
+        .content .left ul .fli span:hover{color: #E96235;}
+        .content .left ul .li_act{background: url(images/minus.png) no-repeat;background-position:2px 12px;}
+        .content .left ul li a{color: #222222;text-align: left;display: block;font-size: 13px;}
+        .content .left ul .cur a{color: #E96235;}
+        .content .left ul li img{width: 100%;}
+        .content .left .sul{display: none;}
+        .content .left  .li_act .sul{display: block;}
+        .content .left .sul li{background: none;line-height: 28px;}
+        .content .list{overflow: hidden; float: left;width: 1017px;}
+        .content .list li{float: left;overflow: hidden;width: 244px;margin-bottom: 10px;margin-right: 8px;}
+        .content .list li:nth-child(4n){margin-right: 0;}
+        .content .list li img{width: 244px;height: 244px;float: left;margin-bottom:4px;}
+        .content .list p {text-align: justify;line-height: 1.6em;padding: 10px 5px;}
+        .content .list li .desc {float: left;width: 100%;background: #ffffff;padding: 0px 10px;box-sizing: border-box;}
+        .content .list .desc .p_title {color: #222222;margin-bottom: 5px;}
+        .content .list .desc p {overflow: hidden;padding: 0;}
+        .content .list .desc .p_title span {
+            font-size: 10px;height: 18px;line-height: 18px;box-sizing: border-box;float: left;
+            overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+        }
+        .content .list .desc .p_title .name {width: 80%;}
+        .content .list .desc .p_title .coup {width: 20%;font-size: 8px;border: 1px solid #e60039;border-radius: 2px;color: #e60039;padding: 0px 4px;height: 16px;line-height: 14px;text-align: center;
+        }
+        .content .list .desc .p_desc {color: #005bac;font-size: 10px;margin-bottom: 9px;text-align: left;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;min-height: 19px}
+        .content .list .desc font {font-weight: bold;font-size: 14px;color: #262626;float: left;margin-right: 5px;}
+    link(href='stylesheets/mancs.css', rel='stylesheet')
+.head
+    // 头部
+    .topbar
+        .topbar_icon
+            .topbar_icon_div
+                img(src='images/free@2x.png')
+                span &#x4E0A;&#x95E8;&#x91CF;&#x4F53;
+            .topbar_icon_div
+                img(src='images/top@2x.png')
+                span &#x9AD8;&#x7AEF;&#x5B9A;&#x5236;
+            .topbar_icon_div
+                img(src='images/10day@2x.png')
+                span &#x5FEB;&#x901F;&#x53D1;&#x8D27;
+            .topbar_icon_div
+                img(src='images/30day@2x.png')
+                span &#x65E0;&#x5FE7;&#x552E;&#x540E;
+        a.logo(href='http://www.ybren.com/')
+            img(src='images/logo@2x.png', alt='贝嘟科技')
+.nav
+    ul.son
+        li
+            a(href='home') &#x9996;&#x9875;
+        li.son_li
+            a.click(href='javascript:;') &nbsp;&#x4EA7;&#x54C1;&nbsp;
+            ul
+                li
+                    a(href='nsxz') &#x7537;&#x58EB;&#x897F;&#x88C5;
+                li
+                    a(href='#') &#x7537;&#x58EB;&#x886C;&#x886B;
+                li
+                    a(href='') &#x7537;&#x58EB;&#x88E4;&#x88C5;
+                li
+                    a(href='/home/category/143') &#x7537;&#x58EB;&#x7F8A;&#x6BDB;/&#x7F8A;&#x7ED2;&#x886B;
+                li
+                    a(href='/home/category/141') &#x7537;&#x58EB;&#x5916;&#x5957;
+                li
+                    a(href='/home/category/296') &#x7537;&#x58EB;&#x56E2;&#x8D2D;&#x5B9A;&#x5236;&#x7CBE;&#x9009;
+                li
+                    a(href='/home/category/145') &#x5973;&#x58EB;&#x897F;&#x88C5;
+                li
+                    a(href='/home/category/146') &#x5973;&#x58EB;&#x886C;&#x886B;
+                li
+                    a(href='/home/category/266') &#x5973;&#x58EB;&#x88D9;/&#x88E4;&#x88C5;
+                li
+                    a(href='/home/category/147') &#x5973;&#x58EB;&#x5916;&#x5957;
+                li
+                    a(href='/home/category/286') &#x7537;&#x88C5;&#x914D;&#x9970;
+        li.son_li
+            a.click(href='javascript:void(0);') &#x9AD8;&#x7AEF;&#x5B9A;&#x5236;
+            ul
+                li
+                    a(href='/Home/Index/maintenance') &#x4FDD;&#x517B;&#x624B;&#x518C;
+                li
+                    a(href='/Home/Activity/Daka') &#x5927;&#x5496;&#x5B9A;&#x5236;&#x79C0;
+                li
+                    a(href='/Home/Index/brandCooper') &#x5408;&#x4F5C;&#x54C1;&#x724C;
+                li
+                    a(href='/Home/Index/service') &#x552E;&#x540E;&#x670D;&#x52A1;
+        li
+            a(href='service') &#x9884;&#x7EA6;&#x91CF;&#x4F53;
+        div(style='clear: both;')
+.right_sevice
+    a.r1(onclick='kefu()') &#x5728;&#x7EBF;&#x5BA2;&#x670D;
+    a.r3(href='###') &#x5B98;&#x65B9;&#x5FAE;&#x4FE1;
+    a.r4(href='###') APP&#x4E0B;&#x8F7D;
+    a.r2(href='/Home/Index/yuyue/frompage/pc-category')
+    img.wx_code(src='images/WeixinHover_01.png')
+    img.app_code(src='images/AppHover_01.png')
+// 头部
+.content
+    ul.list
+        li
+            a(target='_blank', href='/home/itemdetail/YS2696')
+                img(src='images/mancs1.jpg', alt='')
+                .desc
+                    p.p_title
+                        span.name &#x84DD;&#x8272;&#x659C;&#x7EB9;&#x5546;&#x52A1;&#x4F11;&#x95F2;&#x886C;&#x886B;
+                    p.p_desc 100%&#x68C9; 57/58*CM50*CM50*150*96
+                    p.p_num
+                        font(color='#222222') &#xFFE5;398.00
+        li
+            a(target='_blank', href='/home/itemdetail/YS2695')
+                img(src='images/mancs2.jpg', alt='')
+                .desc
+                    p.p_title
+                        span.name &#x7D2B;&#x8272;&#x659C;&#x7EB9;&#x5546;&#x52A1;&#x4F11;&#x95F2;&#x886C;&#x886B;
+                    p.p_desc 100%&#x68C9; 57/58*CM50*CM50*150*96
+                    p.p_num
+                        font(color='#222222') &#xFFE5;398.00
+        li
+            a(target='_blank', href='/home/itemdetail/YS2697')
+                img(src='images/mancs3.jpg', alt='')
+                .desc
+                    p.p_title
+                        span.name &#x767D;&#x8272;&#x659C;&#x7EB9;&#x5546;&#x52A1;&#x4F11;&#x95F2;&#x886C;&#x886B;
+                    p.p_desc 100%&#x68C9; 57/58*CPT40XCPT40*135*100
+                    p.p_num
+                        font(color='#222222') &#xFFE5;398.00
+        li
+            a(target='_blank', href='/home/itemdetail/YS1514')
+                img(src='images/mancs4.jpg', alt='')
+                .desc
+                    p.p_title
+                        span.name &#x9ED1;&#x8272;&#x683C;&#x7EB9;&#x7EAF;&#x68C9;&#x4F11;&#x95F2;&#x77ED;&#x8896;&#x886C;&#x886B;
+                    p.p_desc 100%&#x68C9;
+                    p.p_num
+                        font(color='#222222') &#xFFE5;398.00
+        li
+            a(target='_blank', href='/home/itemdetail/YS2325')
+                img(src='images/mancs5.jpg', alt='')
+                .desc
+                    p.p_title
+                        span.name &#x767D;&#x5E95;&#x84DD;&#x9EC4;&#x5BBD;&#x6761;&#x78E8;&#x6BDB;&#x8272;&#x7EC7;&#x6761;&#x7EB9;&#x4F11;&#x95F2;&#x886C;&#x886B;
+                    p.p_desc 70%&#x68C9;30%&#x9EBB;
+                    p.p_num
+                        font(color='#222222') &#xFFE5;698.00
+        li
+            a(target='_blank', href='/home/itemdetail/YS2581')
+                img(src='images/mancs6.jpg', alt='')
+                .desc
+                    p.p_title
+                        span.name &#x6D45;&#x84DD;&#x8272;&#x659C;&#x7EB9;&#x7ECF;&#x5178;&#x5546;&#x52A1;&#x886C;&#x886B;
+                        span.coup &#x7CBE;&#x54C1;
+                    p.p_desc &#x610F;&#x5927;&#x5229;&#x8FDB;&#x53E3;&#x9762;&#x6599;CANCLINI 100%&#x68C9;  90/2*90/2 133g
+                    p.p_num
+                        font(color='#222222') &#xFFE5;1580.00
+        li
+            a(target='_blank', href='/home/itemdetail/YS2327')
+                img(src='images/mancs7.jpg', alt='')
+                .desc
+                    p.p_title
+                        span.name &#x767D;&#x5E95;&#x6D45;&#x84DD;&#x78E8;&#x6BDB;&#x8272;&#x7EC7;&#x683C;&#x5B50;&#x4F11;&#x95F2;&#x886C;&#x886B;
+                    p.p_desc 100%&#x68C9;
+                    p.p_num
+                        font(color='#222222') &#xFFE5;598.00
+        li
+            a(target='_blank', href='/home/itemdetail/YS2599')
+                img(src='images/mancs8.jpg', alt='')
+                .desc
+                    p.p_title
+                        span.name &#x84DD;&#x8272;&#x68C9;&#x9EBB;&#x4F11;&#x95F2;&#x65F6;&#x5C1A;&#x7537;&#x58EB;&#x957F;&#x8896;&#x886C;&#x886B;
+                        span.coup &#x5165;&#x95E8;&#x7EA7;
+                    p.p_desc 56%&#x68C9; 44%&#x4E9A;&#x9EBB;
+                    p.p_num
+                        font(color='#222222') &#xFFE5;398.00
+.foot
+    .foot_logo
+        img(src='images/foot03.jpg', alt='')
+    .foot_logo_2
+        | &#x8863;&#x90A6;&#x4EBA;&#x4E3A;&#x56FD;&#x5185;&#x7CBE;&#x82F1;&#x4EBA;&#x58EB;&#x670D;&#x52A1;&#xFF0C;&#x7ECF;&#x5178;&#x886C;&#x8863;&#x5B9A;&#x5236;&#x670D;&#x52A1;&#xFF0C;&#x63D0;&#x4F9B;&#x897F;&#x88C5;&#x5B9A;&#x5236;_&#x7537;&#x58EB;&#x897F;&#x88C5;&#x54C1;&#x724C;_&#x8863;&#x90A6;&#x4EBA;&#x3002;&#x5BA2;&#x6237;&#x53EF;&#x514D;&#x8D39;&#x9884;&#x7EA6;&#x4E13;&#x4E1A;&#x7740;&#x88C5;&#x987E;&#x95EE;&#x4E0A;&#x95E8;&#x91CF;&#x4F53;&#x3002;&#x7531;&#x8863;&#x90A6;&#x4EBA;&#x5408;&#x4F5C;&#x7684;&#x62E5;&#x6709;&#x591A;&#x5E74;&#x7ECF;&#x5178;&#x886C;&#x8863;&#x9AD8;&#x7EA7;&#x5B9A;&#x5236;&#x7ECF;&#x9A8C;&#x7684;&#x73B0;&#x4EE3;&#x5316;&#x5DE5;&#x5382;&#x5B9A;&#x5236;&#x5236;&#x4F5C;&#x3002;&#x9;&#x9;&#x9;&#x9;
+        div(style='width:300px;margin:0 auto; padding:20px 0;')
+            a(target='_blank', href='#', style='display:inline-block;text-decoration:none;height:20px;line-height:20px;')
+                img(src='images/beian.png', style='float:left;width: 20px;height: 20px;')
+                p(style='float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;')
+                    | &#x6D59;&#x516C;&#x7F51;&#x5B89;&#x5907; 33011802000773&#x53F7;
+    .infomation
+        p.p1 Copyright&copy;2015-2018 ybren.com,&nbsp;&nbsp;All Rights Reserved.
+        p.p2 &#x7248;&#x6743;&#x6240;&#x6709;:&#x676D;&#x5DDE;&#x8D1D;&#x561F;&#x79D1;&#x6280;&#x6709;&#x9650;&#x516C;&#x53F8;&nbsp;&nbsp;&nbsp;&#x6D59;ICP&#x5907;15008318&#x53F7;
