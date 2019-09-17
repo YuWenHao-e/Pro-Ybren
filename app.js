@@ -17,6 +17,7 @@ var nscsRouter = require('./routes/nscs');
 var nvsxzRouter = require('./routes/nvsxz');
 var pphzRouter = require('./routes/pphz');
 var mancsRouter = require('./routes/mancs');
+var nvsxzdetailRouter = require('./routes/nvsxzdetail');
 
 var app = express();
 
@@ -43,6 +44,8 @@ app.use('/nscs',nscsRouter);
 app.use('/nvsxz',nvsxzRouter);
 app.use('/pphz',pphzRouter);
 app.use('/mancs',mancsRouter);
+app.use('/nvsxzdetail',nvsxzdetailRouter);
+
 
 
 
