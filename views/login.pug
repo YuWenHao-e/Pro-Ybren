@@ -1,0 +1,28 @@
+doctype html
+head
+    meta(charset='utf-8')
+    title &#x4F1A;&#x5458;&#x767B;&#x5F55;
+    link(type='text/css', href='../stylesheets/login.css', rel='stylesheet')
+    script(src='script/login1.js')
+.top
+    a.logo(href='#')
+        img(src='images/logo@2x.png')
+    span &#x4F1A;&#x5458;&#x7279;&#x6743;|&#x79C1;&#x4EBA;&#x5B9A;&#x5236;
+.beijing
+    .shang
+        h2 &#x4F1A;&#x5458;&#x767B;&#x5F55;
+    .kk
+        form(action='login', method='post', onsubmit='return tovaild()')
+            | &#x8D26;&#x53F7;&#xFF1A;
+            input#user(type='text',name='user', placeholder='请输入用账号', required='')
+            br
+            span#user_err #{err}
+            br
+            | &#x9;&#x9;&#x9;&#x5BC6;&#x7801;&#xFF1A;
+            input#pass(type='password',name='pass', placeholder='请输入密码', required='')
+            br
+            span#pass_err
+            br
+            input.anniu(type='submit', value='登录')
+    .xia
+        a(href='#') &#x8FD8;&#x4E0D;&#x662F;&#x4F1A;&#x5458;&#xFF1F;&#x7ACB;&#x5373;&#x6CE8;&#x518C;
