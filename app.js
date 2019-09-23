@@ -19,6 +19,12 @@ var pphzRouter = require('./routes/pphz');
 var mancsRouter = require('./routes/mancs');
 var nvsxzdetailRouter = require('./routes/nvsxzdetail');
 var loginRouter = require('./routes/login');
+var registerRouter = require('./routes/register');
+var pantsRouter = require('./routes/pants');
+var dashijianRouter = require('./routes/dashijian');
+var newsRouter = require('./routes/news');
+var poloRouter = require('./routes/polo');
+
 
 var app = express();
 
@@ -47,7 +53,11 @@ app.use('/pphz',pphzRouter);
 app.use('/mancs',mancsRouter);
 app.use('/nvsxzdetail',nvsxzdetailRouter);
 app.use('/login',loginRouter);
-
+app.use('/register',registerRouter);
+app.use('/pants',pantsRouter);
+app.use('/dashijian',dashijianRouter);
+app.use('/news',newsRouter);
+app.use('/polo',poloRouter);
 
 
 // catch 404 and forward to error handler

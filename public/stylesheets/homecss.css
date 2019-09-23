@@ -152,6 +152,7 @@ a{text-decoration: none;}
 }
 .rightbar a:hover{
     color:#E2AE19;
+    cursor:pointer;
 }
 .lastbox{
     background: url(../images/yy.png) no-repeat center center;
@@ -297,4 +298,46 @@ a{text-decoration: none;}
 }
 .foot .infomation .p1 {
     padding: 20px 0 3px;
+}
+
+.login_register{
+    top: 43px;
+    position: absolute;
+    right: 67px;
+}
+.login_register li{
+    display: inline-block;
+}
+.login_register a{
+    margin-right: 13px;
+    border-radius: 25px;
+    width: 81px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    display: block;
+}
+.login{
+    background-color: #d0b695;
+    color: #0c1730;
+    opacity: 0.8;
+}
+.register{
+    background-color: transparent;
+    border: 1px solid white;
+    color: #ffffff;
+    opacity: 0.8;
+}
+.login:hover{
+    opacity: 1;
+
+}
+.register:hover{
+    opacity: 1;
+}
+.center .son a,.handpick a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }

@@ -83,7 +83,7 @@ body, p, form, h1, h2, h3, h4, h5, h6, ul, li, section, div{
     border-right: 1px solid #364366;
 }
 .nav .son_li {
-    background: url(../img/arrow1.png) no-repeat;
+    background: url(../images/arrow1.png) no-repeat;
     background-position: 94px 18px;
     position:relative;
     color: #fefefe;
@@ -258,4 +258,21 @@ height: 25.6px;
 }
 .foot .infomation .p1 {
     padding: 20px 0 3px;
+}
+
+.chanpin li:hover img{
+    transform: scale(1.3);
+}
+.magnify{
+    height: 244px;
+    width: 244px;
+    overflow: hidden;
+}
+.magnify img{
+    transition: all 0.39s ease;
+}
+.center .son a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }

@@ -2,7 +2,8 @@ doctype html
 head
     meta(charset='utf-8')
     title &#x897F;&#x88C5;&#x5B9A;&#x5236;_&#x7537;&#x58EB;&#x897F;&#x88C5;&#x54C1;&#x724C;_&#x8863;&#x90A6;&#x4EBA;
-    link(rel='shortcut icon', href='/Public/img/favicon.ico')
+    link(rel='shortcut icon', href='/Public/images/favicon.ico')
+    script(src='script/jquery-3.4.1.min.js')
     style(type='text/css').
         body,p,form,h1,h2,h3,h4,h5,h6,ul,li,section,div,*{padding:0;margin:0}
         ul,ol,li{list-style:none; vertical-align: top;}
@@ -119,80 +120,21 @@ head
 // 头部
 .content
     ul.list
-        li
-            a(target='_blank', href='/home/itemdetail/YS2696')
-                img(src='images/mancs1.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x84DD;&#x8272;&#x659C;&#x7EB9;&#x5546;&#x52A1;&#x4F11;&#x95F2;&#x886C;&#x886B;
-                    p.p_desc 100%&#x68C9; 57/58*CM50*CM50*150*96
-                    p.p_num
-                        font(color='#222222') &#xFFE5;398.00
-        li
-            a(target='_blank', href='/home/itemdetail/YS2695')
-                img(src='images/mancs2.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x7D2B;&#x8272;&#x659C;&#x7EB9;&#x5546;&#x52A1;&#x4F11;&#x95F2;&#x886C;&#x886B;
-                    p.p_desc 100%&#x68C9; 57/58*CM50*CM50*150*96
-                    p.p_num
-                        font(color='#222222') &#xFFE5;398.00
-        li
-            a(target='_blank', href='/home/itemdetail/YS2697')
-                img(src='images/mancs3.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x767D;&#x8272;&#x659C;&#x7EB9;&#x5546;&#x52A1;&#x4F11;&#x95F2;&#x886C;&#x886B;
-                    p.p_desc 100%&#x68C9; 57/58*CPT40XCPT40*135*100
-                    p.p_num
-                        font(color='#222222') &#xFFE5;398.00
-        li
-            a(target='_blank', href='/home/itemdetail/YS1514')
-                img(src='images/mancs4.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x9ED1;&#x8272;&#x683C;&#x7EB9;&#x7EAF;&#x68C9;&#x4F11;&#x95F2;&#x77ED;&#x8896;&#x886C;&#x886B;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;398.00
-        li
-            a(target='_blank', href='/home/itemdetail/YS2325')
-                img(src='images/mancs5.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x767D;&#x5E95;&#x84DD;&#x9EC4;&#x5BBD;&#x6761;&#x78E8;&#x6BDB;&#x8272;&#x7EC7;&#x6761;&#x7EB9;&#x4F11;&#x95F2;&#x886C;&#x886B;
-                    p.p_desc 70%&#x68C9;30%&#x9EBB;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;698.00
-        li
-            a(target='_blank', href='/home/itemdetail/YS2581')
-                img(src='images/mancs6.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x6D45;&#x84DD;&#x8272;&#x659C;&#x7EB9;&#x7ECF;&#x5178;&#x5546;&#x52A1;&#x886C;&#x886B;
-                        span.coup &#x7CBE;&#x54C1;
-                    p.p_desc &#x610F;&#x5927;&#x5229;&#x8FDB;&#x53E3;&#x9762;&#x6599;CANCLINI 100%&#x68C9;  90/2*90/2 133g
-                    p.p_num
-                        font(color='#222222') &#xFFE5;1580.00
-        li
-            a(target='_blank', href='/home/itemdetail/YS2327')
-                img(src='images/mancs7.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x767D;&#x5E95;&#x6D45;&#x84DD;&#x78E8;&#x6BDB;&#x8272;&#x7EC7;&#x683C;&#x5B50;&#x4F11;&#x95F2;&#x886C;&#x886B;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;598.00
-        li
-            a(target='_blank', href='/home/itemdetail/YS2599')
-                img(src='images/mancs8.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x84DD;&#x8272;&#x68C9;&#x9EBB;&#x4F11;&#x95F2;&#x65F6;&#x5C1A;&#x7537;&#x58EB;&#x957F;&#x8896;&#x886C;&#x886B;
-                        span.coup &#x5165;&#x95E8;&#x7EA7;
-                    p.p_desc 56%&#x68C9; 44%&#x4E9A;&#x9EBB;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;398.00
+        each i in row
+            li
+                a(target='_blank', href='')
+                    div.magnify
+                        img(src=i.picture, alt='')
+                    .desc
+                        p.p_title
+                            span.name #{i.name}
+                        p.p_desc #{i.describe}
+                        p.p_num
+                            font(color='#222222') &#xFFE5;#{i.price}
+
+    input#more(value='更多款式',type='button',onclick='load()')
+    input#pageindex(type='hidden',value=pageindex)
+
 .foot
     .foot_logo
         img(src='images/foot03.jpg', alt='')
@@ -206,3 +148,4 @@ head
     .infomation
         p.p1 Copyright&copy;2015-2018 ybren.com,&nbsp;&nbsp;All Rights Reserved.
         p.p2 &#x7248;&#x6743;&#x6240;&#x6709;:&#x676D;&#x5DDE;&#x8D1D;&#x561F;&#x79D1;&#x6280;&#x6709;&#x9650;&#x516C;&#x53F8;&nbsp;&nbsp;&nbsp;&#x6D59;ICP&#x5907;15008318&#x53F7;
+script(src='script/nsxz.js')

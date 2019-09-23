@@ -3,6 +3,7 @@ head
     meta(charset='utf-8')
     title
     link(href='/stylesheets/nvsxz.css', type='text/css', rel='stylesheet')
+    script(src='script/jquery-3.4.1.min.js')
 .head
     .topbar
         .icon
@@ -61,71 +62,21 @@ head
         li
             img(src='images/22AM%5DM@5K6ECK%5DBX9A78YVY.png')
 .chanpin
-    ul
-        li
-            .img
-                a(href='nvsxzdetail')
-                    img.bigger(src='images/5cd3b966180a4.jpg', alt='')
-            p
-                span.desc &#x9ED1;&#x8272;&#x6217;&#x9A73;&#x9886;&#x65F6;&#x5C1A;OL&#x5957;&#x88D9;
-            p.tese 60%&#x7F8A;&#x6BDB;27%&#x6DA4;&#x7EB6;8%&#x6851;&#x8695;&#x4E1D;5%&#x83B1;&#x5361;
-            p.jiage &#xFFE5;2999.00
-        li
-            .img
-                a(href='#')
-                    img.bigger(src='images/5cd3b9d91bde8.jpg', alt='')
-            p
-                span.desc &#x85CF;&#x84DD;&#x8272;&#x6761;&#x7EB9;&#x6217;&#x9A73;&#x9886;&#x65F6;&#x5C1A;OL&#x5957;&#x88D9;
-            p.tese 70%&#x7F8A;&#x6BDB;29.5%&#x6DA4;&#x7EB6;0.5%&#x5BFC;&#x7535;&#x7EA4;&#x7EF4;
-            p.jiage &#xFFE5;2799.00
-        li
-            .img
-                a(href='#')
-                    img.bigger(src='images/5bee7562d9d4c.jpg', alt='')
-            p
-                span.desc &#x9ED1;&#x8272;&#x6761;&#x7EB9;&#x65F6;&#x5C1A;OL&#x897F;&#x670D;&#x5957;&#x88C5;
-            p.tese 50.9%&#x7F8A;&#x6BDB;49.1%&#x805A;&#x916F;&#x7EA4;&#x7EF4;
-            p.jiage &#xFFE5;2499.00
-        li
-            .img
-                a(href='#')
-                    img.bigger(src='images/5cde53f73f451.jpg', alt='')
-            p
-                span.desc &#x6D45;&#x9A7C;&#x8272;&#x5973;&#x58EB;&#x65F6;&#x5C1A;&#x897F;&#x670D;&#x5957;&#x88C5;
-            p.tese 95.2%&#x805A;&#x916F;&#x7EA4;&#x7EF4; 4.8%&#x6C28;&#x7EB6;
-            p.jiage &#xFFE5;2699.00
-        li
-            .img
-                a(href='#')
-                    img.bigger(src='images/5cde55283cce3.jpg', alt='')
-            p
-                span.desc &#x767D;&#x8272;&#x9ED1;&#x8FB9;&#x5C0F;&#x9999;&#x98CE;&#x5973;&#x58EB;&#x5957;&#x88C5;
-            p.tese 42.3%&#x805A;&#x916F;&#x7EA4;&#x7EF4; 31.6%&#x68C9; 23.9%&#x7C98;&#x7EA4; 2%&#x805A;&#x916F;&#x8584;&#x819C;&#x7EA4;&#x7EF4;
-            p.jiage &#xFFE5;2992.00
-        li
-            .img
-                a(href='#')
-                    img.bigger(src='images/5cde55a8a87a1.jpg', alt='')
-            p
-                span.desc &#x84DD;&#x767D;&#x8272;&#x5C0F;&#x9999;&#x98CE;&#x5973;&#x58EB;&#x5957;&#x88C5;
-            p.tese 100%&#x805A;&#x916F;&#x7EA4;&#x7EF4;
-            p.jiage &#xFFE5;2992.00
-        li
-            .img
-                a(href='#')
-                    img.bigger(src='images/5c04efde07646.jpg', alt='')
-            p
-                span.desc &#x7D2B;&#x8272;V&#x9886;&#x65F6;&#x5C1A;OL&#x5957;&#x88C5;
-            p.tese 97%&#x805A;&#x916F;&#x7EA4;&#x7EF4;3%&#x6C28;&#x7EB6;   180g
-            p.jiage &#xFFE5;2749.00
-        li
-            .img
-                a(href='#')
-                    img.bigger(src='images/5b696fd9bcf9b.jpg', alt='')
-            p
-                span.desc 100%&#x7F8A;&#x6BDB;&#x5973;&#x58EB;&#x65F6;&#x5C1A;&#x804C;&#x4E1A;&#x9ED1;&#x8272;&#x5957;&#x88D9;
-            p.tese 100%&#x7F8A;&#x6BDB;
-            p.jiage &#xFFE5;3390.00
+    ul#db
+        each i in row
+            li
+                .img
+                    a(href='nvsxzdetail')
+                        div.magnify
+                            img.bigger(src=i.picture, alt='')
+                p
+                    span.desc #{i.name}
+                p.tese #{i.describe}
+                p.jiage &#xFFE5;#{i.price}
+
+input#more(value='更多款式',type='button',onclick='load()')
+input#pageindex(type='hidden',value=pageindex)
+
 .foot
     .foot_log
         img(src='images/foot03.jpg', width='1025px')
@@ -146,4 +97,4 @@ head
         .infomation
             p.p1 Copyright&copy;2015-2018 ybren.com,  All Rights Reserved.
             p &#x7248;&#x6743;&#x6240;&#x6709;:&#x676D;&#x5DDE;&#x8D1D;&#x561F;&#x79D1;&#x6280;&#x6709;&#x9650;&#x516C;&#x53F8;   &#x6D59;ICP&#x5907;15008318&#x53F7;
-script(src='/script/nvsxz.js')
+script(src='script/nvsxz.js')

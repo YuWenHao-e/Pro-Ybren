@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.bigbox{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    background-image: url(../images/index.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1005px;
+}
+.bigbox #pass,.bigbox #pass2,.bigbox #user{
+    margin-bottom: 30px;
+    width:242px;
+    height: 36px;
+    border-radius: 25px;
+    border: 1px solid black;
+    font-size: 16px;
+    padding-left: 15px;
+}
+form{
+    position: relative;
+    width:365px;
+    text-align: right;
+    margin-left: 2%;
+}
+.zhuce{
+    border-radius: 25px;
+    width: 123px;
+    height: 47px;
+    margin-right: 89px;
+    font-size: 18px;
+    background-color: #ddbba2;
+    border: 1px solid black;
+    color: initial;
+}
+.tank{
+    width:437px;
+    margin-left: 24%;
+    padding-top: 4%;
+    color: #34111d;
+    background-color: #ffffffa8;
+    border-radius: 30px;
+    padding-bottom: 2%;
+}
+.nav{
+    position: relative;
+    height: 160px;
+}
+.logo {
+    width: 209px;
+    height: 160px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 24px;
+    z-index: 2100;
+    background: #DDBBA2;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+}
+.logo img {
+    padding: 0;
+    height: 91px;
+    width: 150px;
+}
+.warn{
+    position:absolute;
+    color:red;
+    left: 123px;
+    top: -23px;
+}
+#user-err{
+    position:absolute;
+    color:red;
+    left: 123px;
+    top: 39px;
+}
+#pass-err{
+    position:absolute;
+    color:red;
+    left: 123px;
+    top: 109px;
+}
+#pass2-err{
+    position:absolute;
+    color:red;
+    left: 123px;
+    top: 179px;
+}

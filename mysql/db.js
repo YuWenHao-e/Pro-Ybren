@@ -4,7 +4,7 @@ db.query =function (sql, callback) {
     var connect = mysql.createConnection({
         host:'localhost',
         user:'root',
-        password: '6533',
+        password: '979808cc',
         port:3306,
         database:'ybren'
     });
