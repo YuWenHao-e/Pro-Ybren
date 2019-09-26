@@ -233,3 +233,27 @@ a{text-decoration: none;}
 .foot .infomation .p1 {
     padding: 20px 0 3px;
 }
+.list li:hover img{
+    transform: scale(1.3);
+}
+.magnify{
+    height: 244px;
+    width: 244px;
+    overflow: hidden;
+}
+.magnify img{
+    transition: all 0.39s ease;
+}
+.content .list #more{
+    position:absolute;
+    bottom:0%;
+    left:50%;
+    border-radius: 25px;
+    height: 35px;
+    width: 70px;
+    background-color: beige;
+    border: 1px solid black;
+}
+#more:hover{
+    background-color: #005bac;
+}

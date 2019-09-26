@@ -243,6 +243,14 @@ a{text-decoration: none;}
     position:absolute;
     bottom:0%;
     left:50%;
+    border-radius: 25px;
+    height: 35px;
+    width: 70px;
+    background-color: beige;
+    border: 1px solid black;
+}
+#more:hover{
+    background-color: #005bac;
 }
 .center .son a{
     display: block;

@@ -12,15 +12,18 @@ function load() {
                 show_again +=
                     `
                 <li>
-                    <div class="magnify">
-                         <img src=${result[i].picture}>
-                    </div>
-                    <div>
-                        <span class="desc">${result[i].name}</span>
-                        <span class="coup">精品</span>
-                    </div>
-                    <p class="tese">${result[i].describe}</p>
-                    <p class="jiage">&#xFFE5;${result[i].price}</p>
+                    <a>
+                        <div class="magnify">
+                             <img src=${result[i].picture}>
+                        </div>
+                        <div class="desc">
+                             <p class="p_title">
+                                <span class="name">${result[i].name}</span></p>
+                            <p class="p_desc">${result[i].describe}</p>
+                            <p class="p_num" style="color=#222222;font-weight: bold;font-size: 14px;color: #262626;float: left;margin-right: 5px;">&#xFFE5;${result[i].price}</p>
+                        </div>
+                        
+                        </a>
                 </li>
                 `
             };

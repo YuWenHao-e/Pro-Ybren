@@ -2,7 +2,8 @@ doctype html
 head
     meta(charset='utf-8')
     link(type='text/css', href='/stylesheets/homecss.css', rel='stylesheet')
-    title
+    link(rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"  media="screen" )
+    title 首页
 .head
     .topbar
         .login_register
@@ -47,6 +48,10 @@ head
                             a(href='nvsxz') 女士西装
                         li
                             a(href='nscs') 女士衬衫
+                        li
+                            a(href='polo') 男士polo衫
+                        li
+                            a(href='pants') 男士休闲裤
                 li.son_li
                     a.click(href='') &#x9AD8;&#x7AEF;&#x5B9A;&#x5236;
                     ul
@@ -69,12 +74,26 @@ head
     img.app(src='images/AppHover_01.png')
 .content
     .lazybox
-        a(href='', target='_blank', style='display: block;width: 100%;')
-            img.lazy(style='display: block;width: 100%;', src='images/pc_01.jpg')
+        a(href='', target='_blank', style='display: block;width: 100%;opacity: 0;')
+            img.lazy(src='images/pc_01.jpg')
+        a(href='', target='_blank', style='display: block;width: 100%;animation: show_1 9s infinite;position: absolute;\
+      top:0')
+            img.lazy(src='images/pc_01.jpg')
+        a(href='', target='_blank', style='display: block;width: 100%;animation: show_2 9s infinite;position: absolute;\
+      top:0')
+            img.lazy(src='images/pc_01b.jpg')
     .lazybox
-        img.lazy(style='display: block;width: 100%;', src='images/pc_02.jpg')
+        img.lazy(src='images/pc_02.jpg')
+    .swiper_container
+        .swiper
+            .showzone
+                #imgblock.imgblock
+                    img(src='images/pc_03_swiper_2.jpg')
+                    img(src='images/pc_03_swiper_3.jpg')
+            #prev.prev(onclick='prev()')
+            #next.next(onclick='next()')
     .lazybox
-        img.lazy(style='display: block;width: 100%;', src='images/pc_05.jpg')
+        img.lazy(src='images/pc_05.jpg')
     .handpick
         .category1(style='width:36%')
             a(href='mancs')
@@ -89,7 +108,7 @@ head
         .img.img3
         .img.img4
     .lazybox
-        img(src='images/pc_12.jpg', style='display: block;width: 100%;')
+        img(src='images/pc_12.jpg')
     .product
         .left
             a(href='news',style='width:100%;height:100%;display:block')
@@ -121,3 +140,4 @@ head
     .infomation
         p.p1 Copyright&copy;2015-2018 ybren.com,  All Rights Reserved.
         p &#x7248;&#x6743;&#x6240;&#x6709;:&#x676D;&#x5DDE;&#x8D1D;&#x561F;&#x79D1;&#x6280;&#x6709;&#x9650;&#x516C;&#x53F8;   &#x6D59;ICP&#x5907;15008318&#x53F7;
+script(src='script/swiper.js')

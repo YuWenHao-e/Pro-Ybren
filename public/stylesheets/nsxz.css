@@ -181,6 +181,16 @@ body, p, form, h1, h2, h3, h4, h5, h6, ul, li, section, div{
 width: 1025px;
 margin: auto;
 }
+#more {
+    position: relative;
+    bottom: -26%;
+    left: 45%;
+    border-radius: 25px;
+    height: 35px;
+    width: 70px;
+    background-color: beige;
+    border: 1px solid black;
+}
 .chanpin>ul {
 	list-style: none;
 	vertical-align: top;
@@ -192,6 +202,7 @@ overflow: hidden;
 width: 244px;
 margin-bottom: 10px;
 margin-right: 8px;
+    height:330px;
 }
 .chanpin li img{
 	width: 244px;
@@ -233,7 +244,7 @@ margin-right: 5px;
 height: 25.6px;
 }
 .foot{
-	width: 1903px;
+	width: 100%;/*1903px;*/
 	background: #0D1730;
 }
 .foot_log{

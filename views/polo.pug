@@ -2,6 +2,8 @@ doctype html
 head
     meta(charset='utf-8')
     link(type='text/css', href='stylesheets/polo.css', rel='stylesheet')
+    link(rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"  media="screen" )
+    script(src='script/jquery-3.4.1.min.js')
     style(type='text/css').
         body,p,form,h1,h2,h3,h4,h5,h6,ul,li,section,div,*{padding:0;margin:0}
         ul,ol,li{list-style:none; vertical-align: top;}
@@ -29,9 +31,9 @@ head
         .content .left .sul{display: none;}
         .content .left  .li_act .sul{display: block;}
         .content .left .sul li{background: none;line-height: 28px;}
-        .content .list{overflow: hidden; float: left;width: 1017px;}
+        .content .list{overflow: hidden; margin:0 auto;width: 1017px;position: relative;padding-bottom: 50px;}
         .content .list li{float: left;overflow: hidden;width: 244px;margin-bottom: 10px;margin-right: 8px;}
-        .content .list li:nth-child(4n){margin-right: 0;}
+
         .content .list li img{width: 244px;height: 244px;float: left;margin-bottom:4px;}
         .content .list p {text-align: justify;line-height: 1.6em;padding: 10px 5px;}
         .content .list li .desc {float: left;width: 100%;background: #ffffff;padding: 0px 10px;box-sizing: border-box;}
@@ -45,7 +47,7 @@ head
         }
         .content .list .desc .p_desc {color: #005bac;font-size: 10px;margin-bottom: 9px;text-align: left;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;min-height: 19px}
         .content .list .desc font {font-weight: bold;font-size: 14px;color: #262626;float: left;margin-right: 5px;}
-    title
+    title 男士Polo 衫
 .head
     .topbar
         .icon
@@ -79,11 +81,15 @@ head
                         li
                             a(href='nsxz') &#x7537;&#x58EB;&#x897F;&#x88C5;
                         li
-                            a(href='') &#x7537;&#x58EB;&#x886C;&#x886B;
+                            a(href='mancs') &#x7537;&#x58EB;&#x886C;&#x886B;
                         li
-                            a(href='') &#x5973;&#x58EB;&#x897F;&#x88C5;
+                            a(href='nvsxz') &#x5973;&#x58EB;&#x897F;&#x88C5;
                         li
-                            a(href='') &#x5973;&#x58EB;&#x886C;&#x886B;
+                            a(href='nscs') &#x5973;&#x58EB;&#x886C;&#x886B;
+                        li
+                            a(href='polo') 男士polo衫
+                        li
+                            a(href='pants') 男士休闲裤
                 li.son_li
                     a.click(href='') &#x9AD8;&#x7AEF;&#x5B9A;&#x5236;
                     ul
@@ -92,9 +98,9 @@ head
                         li
                             a(href='dakaxiu') &#x5927;&#x5496;&#x5B9A;&#x5236;&#x79C0;
                         li
-                            a(href='') &#x5408;&#x4F5C;&#x54C1;&#x724C;
+                            a(href='pphz') &#x5408;&#x4F5C;&#x54C1;&#x724C;
                         li
-                            a(href='#') &#x552E;&#x540E;&#x670D;&#x52A1;
+                            a(href='service') &#x552E;&#x540E;&#x670D;&#x52A1;
                 li
                     a(href='reserve') &#x9884;&#x7EA6;&#x91CF;&#x4F53;
 .rightbar
@@ -105,448 +111,22 @@ head
     img.wx(src='images/WeixinHover_01.png')
     img.app(src='images/AppHover_01.png')
 .content
-    ul.list
-        li
-            a(target='_blank', href='/home/itemdetail/YS1812')
-                img(src='./images/polo1.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x9ED1;&#x8272;&#x5706;&#x9886;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x957F;&#x8896;T&#x6064;
-                    p.p_desc 66%&#x68C9;30%&#x83B1;&#x8D5B;&#x5C14;&#x7EA4;&#x7EF4;4%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;630.00
-                        // <s>吊牌价：1260.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1813')
-                img(src='./images/1.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x9ED1;&#x8272;&#x5706;&#x9886;&#x4F11;&#x95F2;&#x957F;&#x8896;T&#x6064;
-                    p.p_desc  66%&#x68C9;30%&#x83B1;&#x8D5B;&#x5C14;&#x7EA4;&#x7EF4;4%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;730.00
-                        // <s>吊牌价：1460.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1816')
-                img(src='./images/1.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x9ED1;&#x8272;POLO&#x9886;&#x957F;&#x8896;T&#x6064;
-                    p.p_desc 66%&#x68C9;30%&#x83B1;&#x8D5B;&#x5C14;&#x7EA4;&#x7EF4;4%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;730.00
-                        // <s>吊牌价：1460.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1817')
-                img(src='./images/1.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x9ED1;&#x8272;V&#x9886;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x957F;&#x8896;T&#x6064;
-                    p.p_desc  66%&#x68C9;30%&#x83B1;&#x8D5B;&#x5C14;&#x7EA4;&#x7EF4;4%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;630.00
-                        // <s>吊牌价：1260.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1826')
-                img(src='./images/2.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x85CF;&#x9752;&#x8272;&#x6761;&#x7EB9;&#x534A;&#x62C9;&#x94FE;&#x5168;&#x68C9;&#x5546;&#x52A1;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;898.00
-                        // <s>吊牌价：1796.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1828')
-                img(src='./images/2.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x85CF;&#x9752;&#x8272;&#x6761;&#x7EB9;&#x886C;&#x886B;&#x9886;&#x5168;&#x68C9;&#x5546;&#x52A1;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;998.00
-                        // <s>吊牌价：1996.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1829')
-                img(src='./images/2.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x85CF;&#x9752;&#x8272;&#x6761;&#x7EB9;&#x886C;&#x886B;&#x9886;&#x5168;&#x68C9;&#x5546;&#x52A1;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;898.00
-                        // <s>吊牌价：1796.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1830')
-                img(src='./images/2.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x7070;&#x8272;&#x6761;&#x7EB9;&#x886C;&#x886B;&#x9886;&#x5168;&#x68C9;&#x5546;&#x52A1;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;898.00
-                        // <s>吊牌价：1796.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1831')
-                img(src='./images/2.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x767D;&#x8272;&#x6761;&#x7EB9;&#x886C;&#x886B;&#x9886;&#x5168;&#x68C9;&#x5546;&#x52A1;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;898.00
-                        // <s>吊牌价：1796.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1832')
-                img(src='./images/3.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x7D2B;&#x8272;&#x829D;&#x9EBB;&#x70B9;&#x534A;&#x62C9;&#x94FE;&#x5168;&#x68C9;&#x5546;&#x52A1;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;898.00
-                        // <s>吊牌价：1796.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1833')
-                img(src='./images/3.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x7070;&#x8272;&#x829D;&#x9EBB;&#x70B9;&#x534A;&#x62C9;&#x94FE;&#x5168;&#x68C9;&#x5546;&#x52A1;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;898.00
-                        // <s>吊牌价：1796.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1834')
-                img(src='./images/3.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x84DD;&#x8272;&#x829D;&#x9EBB;&#x70B9;&#x886C;&#x886B;&#x9886;&#x5168;&#x68C9;&#x5546;&#x52A1;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;898.00
-                        // <s>吊牌价：1796.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1835')
-                img(src='./images/4.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x7EFF;&#x8272;&#x829D;&#x9EBB;&#x70B9;&#x886C;&#x886B;&#x9886;&#x5168;&#x68C9;&#x5546;&#x52A1;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;898.00
-                        // <s>吊牌价：1796.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1840')
-                img(src='./images/4.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x7D2B;&#x8272;&#x51C0;&#x8272;&#x534A;&#x62C9;&#x94FE;&#x5929;&#x4E1D;&#x7F8A;&#x6BDB;&#x68C9;&#x5546;&#x52A1;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc 49%&#x83B1;&#x8D5B;&#x5C14;&#x7EA4;&#x7EF4;40.5%&#x805A;&#x916F;&#x7EA4;&#x7EF4;10.5%&#x7F8A;&#x6BDB;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;1098.00
-                        // <s>吊牌价：2196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1585')
-                img(src='./images/4.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x7EA2;&#x8272;&#x90FD;&#x5E02;&#x65F6;&#x5C1A;&#x5168;&#x68C9;&#x957F;&#x8896;T&#x6064;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;798.00
-                        // <s>吊牌价：1596.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1841')
-                img(src='./images/4.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x9152;&#x7EA2;&#x8272;&#x51C0;&#x8272;&#x534A;&#x62C9;&#x94FE;&#x5929;&#x4E1D;&#x7F8A;&#x6BDB;&#x68C9;&#x5546;&#x52A1;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc  49%&#x83B1;&#x8D5B;&#x5C14;&#x7EA4;&#x7EF4;40.5%&#x805A;&#x916F;&#x7EA4;&#x7EF4;10.5%&#x7F8A;&#x6BDB;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;998.00
-                        // <s>吊牌价：1996.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1842')
-                img(src='./images/5.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x84DD;&#x8272;&#x51C0;&#x8272;&#x534A;&#x62C9;&#x94FE;&#x5929;&#x4E1D;&#x7F8A;&#x6BDB;&#x68C9;&#x5546;&#x52A1;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc 49%&#x83B1;&#x8D5B;&#x5C14;&#x7EA4;&#x7EF4;40.5%&#x805A;&#x916F;&#x7EA4;&#x7EF4;10.5%&#x7F8A;&#x6BDB;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;1098.00
-                        // <s>吊牌价：2196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1844')
-                img(src='./images/5.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x7070;&#x8272;&#x62FC;&#x63A5;&#x5706;&#x9886;&#x5F39;&#x529B;&#x7ED2;&#x4FDD;&#x6696;&#x4F11;&#x95F2;&#x65F6;&#x5C1A;T&#x6064;
-                    p.p_desc 95%&#x68C9;5%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;998.00
-                        // <s>吊牌价：1996.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1845')
-                img(src='./images/5.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x767D;&#x8272;&#x62FC;&#x63A5;&#x5706;&#x9886;&#x5F39;&#x529B;&#x7ED2;&#x4FDD;&#x6696;&#x4F11;&#x95F2;&#x65F6;&#x5C1A;T&#x6064;
-                    p.p_desc  95%&#x68C9;5%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;998.00
-                        // <s>吊牌价：1996.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1592')
-                img(src='./images/5.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x85CF;&#x9752;&#x8272;&#x65F6;&#x5C1A;&#x7B80;&#x7EA6;&#x68C9;&#x5F39;&#x5706;&#x9886;&#x957F;&#x8896;T&#x6064;
-                    p.p_desc 94.1%&#x68C9;5.9%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;798.00
-                        // <s>吊牌价：1596.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2435')
-                img(src='./images/6.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x5B9D;&#x84DD;&#x5706;&#x9886;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 54%&#x9526;&#x7EB6;36%&#x7C98;&#x7EA4;10%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;598.00
-                        // <s>吊牌价：1196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2259')
-                img(src='./images/6.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x767D;&#x8272;&#x5706;&#x9886;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 95%&#x68C9;5%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;419.00
-                        // <s>吊牌价：838.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2260')
-                img(src='./images/6.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x85CF;&#x84DD;&#x5706;&#x9886;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 95%&#x68C9;5%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;419.00
-                        // <s>吊牌价：838.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2261')
-                img(src='./images/6.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x9ED1;&#x8272;&#x5706;&#x9886;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 95%&#x68C9;5%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;419.00
-                        // <s>吊牌价：838.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2263')
-                img(src='./images/6.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x85CF;&#x84DD;V&#x9886;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 95%&#x68C9;5%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;419.00
-                        // <s>吊牌价：838.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2264')
-                img(src='./images/6.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x9ED1;&#x8272;V&#x9886;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 95%&#x68C9;5%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;419.00
-                        // <s>吊牌价：838.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2358')
-                img(src='./images/1.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x7D2B;&#x8272;POLO&#x9886;&#x77ED;&#x8896;&#x9488;&#x7EC7;T&#x6064;
-                    p.p_desc 94.1%&#x68C9;5.9%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;598.00
-                        // <s>吊牌价：1196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2367')
-                img(src='./images/1.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x7EA2;&#x8272;POLO&#x9886;&#x77ED;&#x8896;&#x7537;&#x58EB;&#x9488;&#x7EC7;T&#x6064;
-                        span.coup &#x7CBE;&#x54C1;
-                    p.p_desc 11.1%&#x6851;&#x8695;&#x4E1D;88.9%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;1098.00
-                        // <s>吊牌价：2196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2382')
-                img(src='./images/1.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x84DD;&#x767D;&#x6761;&#x7EB9;&#x5706;&#x9886;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;798.00
-                        // <s>吊牌价：1596.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2383')
-                img(src='./images/1.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x84DD;&#x767D;&#x6761;&#x7EB9;&#x5706;&#x9886;&#x7537;&#x58EB;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;798.00
-                        // <s>吊牌价：1596.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2384')
-                img(src='./images/2.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x767D;&#x8272;&#x5706;&#x9886;&#x7537;&#x58EB;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 94.1%&#x68C9;5.9%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;728.00
-                        // <s>吊牌价：1456.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2385')
-                img(src='./images/2.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x9ED1;&#x8272;&#x5706;&#x9886;&#x7537;&#x58EB;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 94.1%&#x68C9;5.9%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;728.00
-                        // <s>吊牌价：1456.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2386')
-                img(src='./images/2.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x6D45;&#x84DD;&#x5706;&#x9886;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 94.1%&#x68C9;5.9%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;698.00
-                        // <s>吊牌价：1396.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2387')
-                img(src='./images/2.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x9ED1;&#x8272;&#x5706;&#x9886;&#x7537;&#x58EB;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 94.1%&#x68C9;5.9%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;698.00
-                        // <s>吊牌价：1396.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2409')
-                img(src='./images/3.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x84DD;&#x7EFF;&#x5706;&#x9886;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc  55%&#x9526;&#x7EB6; 38%&#x805A;&#x916F; 7%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;598.00
-                        // <s>吊牌价：1196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2410')
-                img(src='./images/3.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x6DF1;&#x7070;&#x5706;&#x9886;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 55%&#x9526;&#x7EB6;38%&#x805A;&#x916F;7%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;598.00
-                        // <s>吊牌价：1196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2411')
-                img(src='./images/3.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x6D45;&#x84DD;&#x5706;&#x9886;&#x4F11;&#x95F2;&#x65F6;&#x5C1A;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 55%&#x9526;&#x7EB6;38%&#x805A;&#x916F;7%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;598.00
-                        // <s>吊牌价：1196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2422')
-                img(src='./images/4.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x9ED1;&#x8272;&#x5706;&#x9886;&#x4F11;&#x95F2;&#x65F6;&#x5C1A;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 54%&#x9526;&#x7EB6; 36%&#x7C98;&#x7EA4; 10%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;598.00
-                        // <s>吊牌价：1196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2423')
-                img(src='./images/4.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x767D;&#x8272;&#x5706;&#x9886;&#x4F11;&#x95F2;&#x65F6;&#x5C1A;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 54%&#x9526;&#x7EB6;36%&#x7C98;&#x7EA4;10%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;598.00
-                        // <s>吊牌价：1196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2424')
-                img(src='./images/4.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x6DF1;&#x84DD;&#x5706;&#x9886;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 54%&#x9526;&#x7EB6;36%&#x7C98;&#x7EA4;10%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;598.00
-                        // <s>吊牌价：1196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2433')
-                img(src='./images/4.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x767D;&#x8272;&#x5706;&#x9886;&#x77ED;&#x8896;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc 54%&#x9526;&#x7EB6;36%&#x7C98;&#x7EA4;10%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;598.00
-                        // <s>吊牌价：1196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2434')
-                img(src='./images/4.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x9ED1;&#x8272;&#x5706;&#x9886;&#x77ED;&#x8896;&#x65F6;&#x5C1A;&#x4F11;&#x95F2;T&#x6064;
-                    p.p_desc 54%&#x9526;&#x7EB6;36%&#x7C98;&#x7EA4;10%&#x6C28;&#x7EB6;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;598.00
-                        // <s>吊牌价：1196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS1444')
-                img(src='./images/4.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x5929;&#x84DD;&#x8272;&#x90FD;&#x5E02;&#x65F6;&#x5C1A;&#x5168;&#x68C9;&#x77ED;&#x8896;T&#x6064;
-                    p.p_desc 100%&#x68C9;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;598.00
-                        // <s>吊牌价：1196.00</s>
-        li
-            a(target='_blank', href='/home/itemdetail/YS2513')
-                img(src='./images/4.jpg', alt='')
-                .desc
-                    p.p_title
-                        span.name &#x6697;&#x6E56;&#x84DD;&#x7537;&#x58EB;&#x9488;&#x7EC7;&#x5706;&#x9886;&#x77ED;&#x8896;
-                    p.p_desc 32%&#x5929;&#x4E1D;31%&#x7EB3;&#x7C73;&#x4E1D;37%&#x9ECF;&#x7EA4;
-                    p.p_num
-                        font(color='#222222') &#xFFE5;998.00
-                        // <s>吊牌价：1996.00</s>
+    ul.list#db
+        each i in row
+            li
+                a(target='_blank', href='')
+                    .magnify
+                        img(src=i.picture, alt='')
+                    .desc
+                        p.p_title
+                            span.name #{i.name}
+                        p.p_desc #{i.describe}
+                        p.p_num
+                            font(color='#222222') &#xFFE5;#{i.price}
+                            // <s>吊牌价：1260.00</s>
+        input#more(value='更多款式',type='button',onclick='load()')
+        input#pageindex(type='hidden',value=pageindex)
+
 .foot
     .foot_logo
         img(src='images/foot03.jpg', style='float: left;width: 100%;')
@@ -567,3 +147,4 @@ head
     .infomation
         p.p1 Copyright&copy;2015-2018 ybren.com,  All Rights Reserved.
         p &#x7248;&#x6743;&#x6240;&#x6709;:&#x676D;&#x5DDE;&#x8D1D;&#x561F;&#x79D1;&#x6280;&#x6709;&#x9650;&#x516C;&#x53F8;   &#x6D59;ICP&#x5907;15008318&#x53F7;
+script(src='script/polo.js')
